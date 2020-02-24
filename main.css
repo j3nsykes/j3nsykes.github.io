@@ -4,8 +4,8 @@ body {
   font-family: 'Source Code Pro', sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  color: #666;
-  background-color:#FCF3CF;
+  color: #d0232b;
+  background-color:#f5d44d;
 }
 * {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
   font-size: 32px;
   display: inline-block;
   margin: 0 0 1em 0;
-  color: #000;
+  color: #d0232b;
 }
 #wrapper section {
   width: 100%;
