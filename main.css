@@ -5,7 +5,7 @@ body {
   font-weight: 300;
   line-height: 1.6;
   color: #666;
-  background-color:#f9f8c4;
+  background-color:#4f23d0;
 }
 * {
   box-sizing: border-box;
@@ -17,7 +17,7 @@ body {
   font-size: 32px;
   display: inline-block;
   margin: 0 0 1em 0;
-  color: #d0232b;
+  color: #4f23d0;
 }
 #wrapper section {
   width: 100%;
@@ -26,7 +26,7 @@ body {
 }
 #wrapper section h2 {
   font-size: 20px;
-  color: #000;
+  color: #4f23d0;
   margin: 0;
 }
 #wrapper section p {
