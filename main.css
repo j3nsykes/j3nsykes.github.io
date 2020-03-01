@@ -22,12 +22,14 @@ font-family: 'Source Code Pro',sans-serif ;
 #title h1 {
   font-size: 72px;
   display: inline-block;
-  color: #4f23d0;
+  background-color: #4f23d0;
+  color:#fff;
 }
 #title h3 {
   font-size: 20px;
   font-weight: 300;
-  color: #4f23d0;
+  background-color: #4f23d0;
+  color:#fff;
   margin: 0;
 }
 
