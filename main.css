@@ -17,18 +17,19 @@ font-family: 'Source Code Pro',sans-serif ;
 }
 #title{
   padding: 80px;
+  background-color: #4f23d0; /* For browsers that do not support gradients */
+    background-image: linear-gradient(#4f23d0, #f9f8c4);
 
 }
 #title h1 {
   font-size: 72px;
   display: inline-block;
-  background-color: #4f23d0;
+
   color:#fff;
 }
 #title h3 {
   font-size: 20px;
   font-weight: 300;
-  background-color: #4f23d0;
   color:#fff;
   margin: 0;
 }
