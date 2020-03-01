@@ -12,8 +12,9 @@ font-family: 'Source Code Pro',sans-serif ;
 }
 #title section {
   width: 100%;
+    margin: 0;
   max-width: 800px;
-  margin: 0 0 0px 0;
+
 }
 #title{
   padding: 80px;
