@@ -10,6 +10,11 @@ font-family: 'Source Code Pro',sans-serif ;
 * {
   box-sizing: border-box;
 }
+#title section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 80px 0;
+}
 #title{
   padding: 80px;
 
@@ -26,6 +31,8 @@ font-family: 'Source Code Pro',sans-serif ;
   color: #4f23d0;
   margin: 0;
 }
+
+
 #wrapper {
   padding: 80px;
 }
