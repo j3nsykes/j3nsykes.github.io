@@ -20,9 +20,8 @@ font-family: 'Source Code Pro',sans-serif ;
 
 }
 #title h1 {
-  font-size: 32px;
+  font-size: 42px;
   display: inline-block;
-  margin: 0 0 1em 0;
   color: #4f23d0;
 }
 #title h3 {
