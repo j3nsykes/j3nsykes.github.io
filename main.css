@@ -17,7 +17,7 @@ font-family: 'Source Code Pro',sans-serif ;
 
 }
 #title{
-  padding: 0px;
+  padding: 80px;
 background-color: #4f23d0; /* For browsers that do not support gradients */
 background-image: linear-gradient(to bottom right,#4f23d0, #f9f8c4);
 /*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
