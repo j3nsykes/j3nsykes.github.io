@@ -1,122 +1,166 @@
-
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Teaching Workshop @JenSykes</title>
-<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
-        <div id="wrapper">
 
-            <h1>Teaching Workshop <br>
-                by JenSykes</h1>
-            <section>
-              <h1>Intro</h1>
-                <p>Context to project here</p>
-                <p><a href="">Source Code for all examples</a></p>
-                <p><a href="#" target="_blank">Guide to Tools</a></p>
-                
-                              <h1>Examples</h1>
-                <p>1</p>
-                <p><a href="">2</a></p>
-                <p><a href="#" target="_blank">3</a></p>
-            </section>
+<head>
+  <meta charset="utf-8">
+  <title>Teaching Workshop @JenSykes</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
 
----------------------------------------------------------------------------->
-            <section>
-                <h1>Part 1</h1>
-                <h2>Sub Header</h2>
-                <ul><a href="" target="_blank">Basics</a></ul>
-                <ul><a href="" target="_blank">Example 1</a></ul>
-                <ul><a href="" target="_blank">Example 2</a></ul>
-                <ul><a href="" target="_blank">Example 3</a></ul>
-                <ul><a href="" target="_blank">Example 4</a></ul>
-                <ul><a href="" target="_blank">Example 5</a></ul>
+<body>
+  <div id="wrapper">
 
----------------------------------------------------------------------------->
+    <h1>Teaching Workshop <br>
+      by JenSykes</h1>
+    <section>
+      <h1>Intro</h1>
+      <p>Context to project here</p>
+      <p><a href="">Source Code for all examples</a></p>
+      <p><a href="#" target="_blank">Guide to Tools</a></p>
 
-                <h2>Exercise 1</h2>
-                <ul><a href="" target="_blank">Download, install </a></ul>
-                <ul><a href="" target="_blank">Examples </a></ul>
-                <ul><a href="" target="_blank">P5js Examples</a></ul>
+      <h1>Examples</h1>
+      <p>1</p>
+      <p><a href="">2</a></p>
+      <p><a href="#" target="_blank">3</a></p>
+    </section>
 
-                <br>
-                <ul><em>Exercise 2: </em></ul>
+    ---------------------------------------------------------------------------->
+    <section>
+      <h1>Part 1: Classification and Regression</h1>
+      <h2>Teachable Machines</h2>
+      <p>We will explore classification using Google's Teachable Machine resource.</p>
+      <ul><a href="" target="_blank">Google's Teachable Machine</a></ul>
+      <ul><a href="" target="_blank">Teachable Machine Template</a></ul>
+      <ul><a href="" target="_blank">Image Classifier</a></ul>
+      <ul><a href="" target="_blank">Sound Classifier</a></ul>
 
-                <ul><em>Exercise 3:  </em></ul>
+      <ul><a href="" target="_blank">Example 4</a></ul>
+      <ul><a href="" target="_blank">Example 5</a></ul>
 
-                <ul><em>Exercise 4: </em></ul>
----------------------------------------------------------------------------->
+      ---------------------------------------------------------------------------->
 
-                <h2>Exercise 2</h2>
+      <h3>Exercise 1</h3>
+      <p>Try make a change to an output in your Teachable Machine template.
+        Look for the key variables to identify your classification label.
+        Perhaps change a shape,text, image or sound as an output. </p>
 
-                    <ul>
-                        <a href="" target="_blank">Title</a>
-                        <p>Download and install.</p>
-                    </ul>
+      <p><strong>Extra Resources:</stromg></p>
 
-                    <ul>
-                        <a href="" target="_blank">Examples</a>
-                        <p>To Do</p>
-                    </ul>
+        <p>Sometimes its quicker to use the ML5 classifier than always jumping onthe back of Google's Teachable Machine</p>
+        <ul><a href="" target="_blank">ML5 webcam classifier</a></ul>
+
+      <ul><a href="" target="_blank">Advice on webCam training methods</a></ul>
+      <br>
+
+      ---------------------------------------------------------------------------->
+      <h2>Classiification</h2>
+      <p>Lets explore what is happening behind the scenes.</p>
+      <ul>
+        <a href="" target="_blank">Mouse X Y classification</a>
+        <p>Using your mouse explore how to train a neural net using classification.</p>
+      </ul>
+
+      <ul>
+        <a href="" target="_blank">Colourful visual of KNN nearest neighbour</a>
+        <p>A really nice example by Charolotte 000</p>
+      </ul>
+      ---------------------------------------------------------------------------->
+      <h2>Regression</h2>
+      <p>We might not always want distinct label outputs. What if we want a more continuous output or prediction? This is where <strong>regression</strong> comes in. </p>
+      <ul>
+        <a href="" target="_blank">Regression basics.</a>
+        <p>Using your mouse explore how to train using regression.</p>
+      </ul>
+
+      <ul>
+        <a href="" target="_blank">Webcam Regression</a>
+        <p>Use your webcam to train using regression</p>
+      </ul>
+
+      <h3>Exercise 2</h3>
+      <ul>
+        <p>Try changing a different output with regression</p>
+        <a href="" target="_blank">Typography</a>
+        <a href="" target="_blank">Playback rate (by Andreas Refsgaard)</a>
+
+      </ul>
 
 
-                    <ul>
-                        <a href="" target="_blank">Further explorations</a>
-                        <p>Test</p>
-                    </ul>
+      ---------------------------------------------------------------------------->
+      <h2>Pre-trained Models</h2>
+      <p>Many ML models we may have encountered in RunwayML utilise pre-trained models. These models already have dataset labels or keypoints we can reference in training.</p>
+      <ul>
+        <a href="" target="_blank">MobileNet</a>
+        <p>MobileNet uses pretrained labels found in the <a href="" target="_blank">ImageNet dataset.</a></p>
+      </ul>
+      <ul>
+        <a href="" target="_blank">YOLO</a>
+        <p>YOLO is similar to MobileNet but uses slightly different methods with its pre-trained model<a href="" target="_blank">More information here</a></p>
+      </ul>
+      <ul>
+        <a href="" target="_blank">PoseNet</a>
+        <p>PoseNet classification</p>
+      </ul>
 
-            </section>
+      <h3>Exercise 2</h3>
+      <p>Try train a classification output with the Face API example</p>
+      <ul>
+        <a href="" target="_blank">Example</a>
+      </ul>
 
----------------------------------------------------------------------------->
+      ---------------------------------------------------------------------------->
+    </section>
 
-            <section>
-<!--
+
+    <section>
+      <!--
           commented out notes
 -->
 
-                <h1>Part 2</h1>
-                <h2>Templates, examples and exercises</h2>
-                <br>
+      <h1>Part 2 : DIY Neural Nets, physical inputs, Runway ML</h1>
+      <h2>DIY neural Nets</h2>
+  ---------------------------------------------------------------------------->
 
-                <h3>0) p5js online editor</h3>
-                <ul><a href="https://editor.p5js.org/" target="_blank">Setup an account with the p5js online editor</a></ul>
-                <br>
+      <h2>Physical Inputs</h2>
 
-                <h3>1) Group Exercise </h3>
-                <ul><img src=""></ul>
+      <h3>Accellerometers</h3>
+      <h3>Capacitive Touch</h3>
+
+      <!--                <ul><img src=""></ul>
                 <ul><a href="" target="_blank">Simple template:</a></ul>
                 <ul><a href="" target="_blank">List 1</a></ul>
                 <ul><a href="h" target="_blank">List 2</a></ul>
 
-                <h3>2) Start prototyping!</h3>
-                <ul><em>Exercise X (group):</ul>
-                    
----------------------------------------------------------------------------->
-
-                <h3>If we have time...</h3>
-                <h3>Other links</h3>
-                <ul><a href="https://ml5js.org/reference/">Documentation + more examples on ml5js.org</a></ul>
-
-
-                <br>
-                <ul><a href="https://editor.p5js.org/" target="_blank">Official p5.js editor</a></ul>
-                <ul><a href="https://p5js.org/reference/" target="_blank">Official p5.js reference</a></ul>
-
-            </section>
-
-
-            <section>
-
-                <h2>Contact Jen Sykes</h2>
-              <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
 -->
-                <a href="https://github.com/j3nsykes">GitHub</a></p>
-            </section>
+      ---------------------------------------------------------------------------->
 
-        </div>
+      <h2>Runway ML</h2>
+      <p>We will explore going beyond the Runway ML interface. How we can communicate in and out of it using P5JS, Arduino and Processing
+      </p>
 
-    </body>
+      <br>
+
+      ---------------------------------------------------------------------------->
+      <h2>External Links</h2>
+      <ul><a href="https://ml5js.org/reference/">Documentation + more examples on ml5js.org</a></ul>
+      <ul><a href="https://editor.p5js.org/" target="_blank">Official p5.js editor</a></ul>
+      <ul><a href="https://p5js.org/reference/" target="_blank">Official p5.js reference</a></ul>
+      <ul><a href="https://p5js.org/reference/" target="_blank">RunwayML</a></ul>
+      <ul><a href="https://p5js.org/reference/" target="_blank">Processing Library for RunwayML</a></ul>
+    </section>
+
+
+    <section>
+
+      <h2>Contact Jen Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+      <a href="https://github.com/j3nsykes">GitHub</a></p>
+    </section>
+
+  </div>
+
+</body>
+
 </html>
