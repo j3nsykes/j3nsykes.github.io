@@ -20,7 +20,7 @@
       <p>This page provides the resources as part of the GSA IxD Sense and Sensibility project. This project explores the realm of computer consciousness, including exploring computer vision, artificial intelligence (AI), machine learning (ML); their
         associated toolsets, philosophical and ethical considerations.</p>
       <p>You are expected to build upon the examples provided and take them in personal directions going beyond their 'out of the box' nature. </p>
-      <p><a href="https://github.com/j3nsykes/SenseandSensibility/blob/master/README.md"target="_blank">Source Code for all examples</a></p>
+      <p><a href="https://github.com/j3nsykes/SenseandSensibility/blob/master/README.md" target="_blank">Source Code for all examples</a></p>
       <p><a href="https://drive.google.com/open?id=19UTk6T8J4IlIImGOYtHYpPmcde0JymJo" target="_blank">Guide to Tools</a></p>
       <br>
       <h2>Examples of other people's work</h2>
@@ -53,7 +53,7 @@
         Look for the key variables to identify your classification label.
         Perhaps change a shape,text, image or sound as an output. </p>
       <ul><a href="https://editor.p5js.org/jen_GSA/sketches/cDAx1qJG" target="_blank">Example triggering images as outputs</a></ul>
-        <ul><a href="https://editor.p5js.org/jen_GSA/sketches/fYYmPX4g" target="_blank">Example triggering sounds as outputs</a></ul>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/fYYmPX4g" target="_blank">Example triggering sounds as outputs</a></ul>
       <p><strong>Extra Resources:</strong>
       </p>
 
@@ -66,7 +66,7 @@
       <h2>Classification</h2>
       <p>Lets explore what is happening behind the scenes of the Teachable Machine examples.</p>
       <ul>
-        <a href="https://editor.p5js.org/jen_GSA/sketches/fdTIbwlv-" target="_blank">Simple mouse XY classification</a>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/7K_iX4WX" target="_blank">Simple mouse XY classification</a>
         <p>Using your mouse explore how to train a neural net using classification.</p>
       </ul>
 
@@ -92,7 +92,7 @@
       <h3>Exercise 2</h3>
       <ul>
         <p>Try changing a different output with regression</p>
-        <a href="https://editor.p5js.org/jen_GSA/sketches/gbcifbSO" target="_blank">Typography  Example</a>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/gbcifbSO" target="_blank">Typography Example</a>
       </ul>
       <ul>
         <a href="https://editor.p5js.org/AndreasRef/sketches/HyEDToYnQ" target="_blank">Playback rate (by Andreas Refsgaard)</a>
@@ -135,26 +135,50 @@
 
       <h1>Part 2 : DIY Neural Nets, physical inputs and Runway ML</h1>
       <h2>DIY neural Nets</h2>
+      <p>We will explore how to create neural nets of our own by scratch using <a href="https://learn.ml5js.org/docs/#/reference/neural-network" target="blank"> ML5 Neural Net function</a></p>
+      <p>Here is a simple bare bones structure we will build from</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/oRKaOHzK" target="_blank">Bare Bones Structure</a>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/C2B9oUzc" target="_blank">Simple Complete Template/a>
+      </ul>
       ---------------------------------------------------------------------------->
 
       <h2>Physical Inputs</h2>
+      <p>We can use the DIY neural net function to train any input. This is what is used with the Face API classifier from part 1.</p>
+      <p>Its really useful if we want to add Classification or Regression training capabilities to Physical Computing components. Previously this was only possible using the Wekinator application. however, now we can bring this to P5JS and the
+        browser</p>
 
-      <h3>Accellerometers</h3>
+      <h3>Accellerometers | IMU</h3>
+      <p>This example works with Adafruit BNO055 but can be adapted to any accellerrometer sensor and webUSB capable Arduino board <i>(see notes on Github page)</i></p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/P776cKng" target="_blank">Teachable IMU</a>
+      </ul>
       <h3>Capacitive Touch</h3>
+      <p>This example works with the Bare Conductive Touchboard. An adapted DataStream code needs to be uploaded onto the board first.<i>(see Arduino code on Github page)</i></p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/9MQHS3KC" target="_blank">Teachable Touchboard</a>
+      </ul>
+      <p>Try considerring what otherr inputs could be trained.</p>
 
-      <!--                <ul><img src=""></ul>
-                <ul><a href="" target="_blank">Simple template:</a></ul>
-                <ul><a href="" target="_blank">List 1</a></ul>
-                <ul><a href="h" target="_blank">List 2</a></ul>
-
--->
       ---------------------------------------------------------------------------->
 
       <h2>Runway ML</h2>
       <p>We will explore going beyond the Runway ML interface. How we can communicate in and out of it using P5JS, Arduino and Processing
       </p>
-
       <br>
+      <p>RunwayML can communicate with Processing, P5JS and any other tool that can utilise HTTP sockets.</p>
+      <p>For the additional Processing examples I've built download the zip file from <a href="https://github.com/j3nsykes/SenseandSensibility/tree/master/RunwayML" target="_blank">here on Github</a>or<a href="https://drive.google.com/open?id=1rzCgR9-YKex0vVzoFOLZoywMxcrZeNFw" target="_blank">here on the Google Drive</a></p>
+      <p>Make sure you also have the lattest RunwayML Processing library installed via Processing or the Gitthub <a href="https://github.com/runwayml/processing-library" target="_blank">here/a></p>
+<br>
+      <p>Additional P5JS examples can be  found in my editor sketchbook. Some highlights are below</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/WKRBKt88" target="_blank">StyleGAN Wanderer</a>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/gTuBw-ki" target="_blank">Speech Recognition to GPT-2</a>
+      </ul>
 
       ---------------------------------------------------------------------------->
       <h2>External Links</h2>
