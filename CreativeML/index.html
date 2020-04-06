@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Creative ML @JenSykes</title>
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+
+    <h1>Creative ML</h1>
+    <h3>with JenSykes</h3>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>This page provides the resources as part of the GSA IxD Sense and Sensibility project. This project explores the realm of computer consciousness, including exploring computer vision, artificial intelligence (AI), machine learning (ML); their
+        associated toolsets, philosophical and ethical considerations.</p>
+      <p>You are expected to build upon the examples provided and take them in personal directions going beyond their 'out of the box' nature. </p>
+      <p><a href="https://github.com/j3nsykes/SenseandSensibility/blob/master/README.md" target="_blank">Source Code for all examples</a></p>
+      <p><a href="https://drive.google.com/open?id=19UTk6T8J4IlIImGOYtHYpPmcde0JymJo" target="_blank">Guide to Tools</a></p>
+      <br>
+      <h2>Examples of other people's work</h2>
+      <br>
+      <p><a href="https://andreasrefsgaard.dk/project/eye-conductor/" target="_blank">Eye Conductor by Andreas Refsgaard</a></p>
+      <p><a href="http://bjoernkarmann.dk/project_alias  http://bjoernkarmann.dk/objectifier" target="_blank">Objectifier by Bjorn Karmann</a></p>
+      <p><a href="http://ciid.dk/education/portfolio/idp17/courses/machine-learning/projects/kolam/" target="_blank">Kolam by CIID</a></p>
+      <p><a href="https://jk-lee.com/geography-of-hidden-faces" target="_blank">Hidden Faces by Joey Lee</a></p>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <section>
+      <h1>Part 1 : Classification and Regression</h1>
+      <h2>Teachable Machines</h2>
+      <p>We will explore classification using Google's Teachable Machine resource.</p>
+      <p>Remember to sign in then duplicate any P5JS examples in order to edit and save your changes. </p>
+      <ul><a href="https://teachablemachine.withgoogle.com/" target="_blank">Google's Teachable Machine</a></ul>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/nC93Bd3W" target="_blank">Teachable Machine Template</a></ul>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/1HovDB5X" target="_blank">Image Classifier</a></ul>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/a3CYSsKd" target="_blank">Sound Classifier</a></ul>
+
+      <!--
+      <ul><a href="" target="_blank">Example 4</a></ul>
+      <ul><a href="" target="_blank">Example 5</a></ul>
+-->
+      ---------------------------------------------------------------------------->
+
+      <h3>Exercise 1</h3>
+      <p>Try make a change to an output in your Teachable Machine template.
+        Look for the key variables to identify your classification label.
+        Perhaps change a shape,text, image or sound as an output. </p>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/cDAx1qJG" target="_blank">Example triggering images as outputs</a></ul>
+      <ul><a href="https://editor.p5js.org/jen_GSA/sketches/fYYmPX4g" target="_blank">Example triggering sounds as outputs</a></ul>
+      <p><strong>Extra Resources:</strong>
+      </p>
+
+      <ul>
+        <p>Sometimes its quicker to use the <a href="https://editor.p5js.org/jen_GSA/sketches/6h4uZIje" target="_blank">ML5 webcam classifier</a> than always jumping on the back of Google's Teachable Machine.
+        </p>
+      </ul>
+      <ul><a href="https://medium.com/@warronbebster/teachable-machine-tutorial-bananameter-4bfffa765866" target="_blank">Advice on advancing your webcam training methods</a></ul>
+      ---------------------------------------------------------------------------->
+      <h2>Classification</h2>
+      <p>Lets explore what is happening behind the scenes of the Teachable Machine examples.</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/7K_iX4WX" target="_blank">Simple mouse XY classification</a>
+        <p>Using your mouse explore how to train a neural net using classification.</p>
+      </ul>
+
+      <ul>
+        <a href="https://editor.p5js.org/Charlotte000/full/T5amlpxoF" target="_blank">Colourful visual of KNN nearest neighbour</a>
+        <p>A really nice example by <a href="https://github.com/Charlotte000" target="_blank">Charlotte 000</a></p>
+      </ul>
+
+      ---------------------------------------------------------------------------->
+
+      <h2>Regression</h2>
+      <p>We might not always want distinct label outputs. What if we want a more continuous output or <u>prediction</u>? This is where <strong>regression</strong> comes in. </p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/m4Vjf5UI" target="_blank">Regression basics.</a>
+        <p>Using your mouse explore how to train using regression.</p>
+      </ul>
+
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/RKesj9aS" target="_blank">Webcam Regression</a>
+        <p>Use your webcam to train using regression</p>
+      </ul>
+
+      <h3>Exercise 2</h3>
+      <ul>
+        <p>Try changing a different output with regression</p>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/gbcifbSO" target="_blank">Typography Example</a>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/AndreasRef/sketches/HyEDToYnQ" target="_blank">Playback rate (by Andreas Refsgaard)</a>
+
+      </ul>
+      ---------------------------------------------------------------------------->
+      <h2>Pre-trained Models</h2>
+      <p>Many ML models we may have encountered in RunwayML utilise pre-trained models. These models already have dataset labels or keypoints we can reference in training.</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/k_kPeeXd0" target="_blank">MobileNet</a>
+        <p>MobileNet uses pretrained labels found in the <a href=" http://image-net.org/papers/imagenet_cvpr09.pdf" target="_blank">ImageNet dataset.</a></p>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/fpNvF4wFm" target="_blank">YOLO</a>
+        <p>YOLO is similar to MobileNet but uses slightly different methods with its pre-trained model<a href="https://pjreddie.com/darknet/yolo/" target="_blank"> more information here</a></p>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/hvA83tad" target="_blank">PoseNet</a>
+        <p>Classify poses using the ML5 PoseNet model</p>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/xQkDSI60" target="_blank">Face API</a>
+        <p>Using ML5 Face API we can track facial expressions and use them as inputs for training.</p>
+      </ul>
+
+      <h3>Exercise 3</h3>
+      <p>Try train a classification output with the Face API example</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/JMWnIGsn" target="_blank">Here</a>
+      </ul>
+
+      ---------------------------------------------------------------------------->
+    </section>
+
+
+    <section>
+      <!--
+          commented out notes
+-->
+
+      <h1>Part 2 : DIY Neural Nets, physical inputs and Runway ML</h1>
+      <h2>DIY neural Nets</h2>
+      <p>We will explore how to create neural nets of our own by scratch using <a href="https://learn.ml5js.org/docs/#/reference/neural-network" target="blank"> ML5 Neural Net function</a></p>
+      <p>Here is a simple bare bones structure we will build from</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/oRKaOHzK" target="_blank">Bare Bones Structure</a>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/C2B9oUzc" target="_blank">Simple Complete Template</a>
+      </ul>
+      ---------------------------------------------------------------------------->
+      <h2>Physical Inputs</h2>
+      <p>We can use the DIY neural net function to train any input. This is what is used with the Face API classifier from part 1.</p>
+      <p>Its really useful if we want to add Classification or Regression training capabilities to Physical Computing components. Previously this was only possible using the Wekinator application. however, now we can bring this to P5JS and the
+        browser</p>
+
+      <h3>Accellerometers | IMU</h3>
+      <p>This example works with Adafruit BNO055 but can be adapted to any accellerrometer sensor and webUSB capable Arduino board <i>(see notes on Github page)</i></p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/P776cKng" target="_blank">Teachable IMU</a>
+      </ul>
+      <h3>Capacitive Touch</h3>
+      <p>This example works with the Bare Conductive Touchboard. An adapted DataStream code needs to be uploaded onto the board first.<i>(see Arduino code on Github page)</i></p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/9MQHS3KC" target="_blank">Teachable Touchboard</a>
+      </ul>
+      <p>Try considerring what otherr inputs could be trained.</p>
+
+      ---------------------------------------------------------------------------->
+
+      <h2>Runway ML</h2>
+      <p>We will explore going beyond the Runway ML interface. How we can communicate in and out of it using P5JS, Arduino and Processing
+      </p>
+      <p>RunwayML can communicate with Processing, P5JS and any other tool that can utilise HTTP sockets.</p>
+      <p>For the additional Processing examples I've built download the zip file from <a href="https://github.com/j3nsykes/SenseandSensibility/tree/master/RunwayML" target="_blank">here on Github</a> or <a
+          href="https://drive.google.com/open?id=1rzCgR9-YKex0vVzoFOLZoywMxcrZeNFw" target="_blank">here on the Google Drive</a></p>
+      <p>Make sure you also have the latest RunwayML Processing library installed via Processing or the Gitthub <a href="https://github.com/runwayml/processing-library" target="_blank">here</a></p>
+      <br>
+      <p>Additional P5JS examples can be found in my editor sketchbook. Some highlights are below</p>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/WKRBKt88" target="_blank">StyleGAN Wanderer</a>
+      </ul>
+      <ul>
+        <a href="https://editor.p5js.org/jen_GSA/sketches/gTuBw-ki" target="_blank">Speech Recognition to GPT-2</a>
+      </ul>
+
+      ---------------------------------------------------------------------------->
+      <h2>External Links</h2>
+      <ul><a href="https://ml5js.org/reference/">Documentation + more examples on ml5js.org</a></ul>
+      <ul><a href="https://p5js.org/reference/" target="_blank">Official p5.js reference</a></ul>
+      <ul><a href="https://runwayml.com/" target="_blank">RunwayML</a></ul>
+      <ul><a href="https://github.com/runwayml/processing-library" target="_blank">Processing Library for RunwayML</a></ul>
+      ---------------------------------------------------------------------------->
+      <h2>Acknowledgments and References</h2>
+      <p>Many of the coded examples have been adapted and expanded upon from original template resources provided by...</p>
+      <ul><a href="https://thecodingtrain.com/learning/ml5/">Dan Shiffman and The Coding Train</a></ul>
+      <ul><a href="https://github.com/AndreasRef" target="_blank">Andreas Refsgaard</a></ul>
+      <ul><a href="https://github.com/yining1023" target="_blank">Yining Shi</a></ul>
+      <ul><a href="https://github.com/b2renger/workshop_ml_PCD2019" target="_blank">Bérenger Recoules</a></ul>
+      <ul><a href="https://github.com/runwayml/processing-library" target="_blank">Cristóbal Valenzuela and George Profenza</a></ul>
+      <br>
+      <p>The original source of inspiration for accessible ML for artiists and musicians</p>
+      <ul><a href="http://www.wekinator.org/examples/" target="_blank">Rebecca Fiebrink and Wekinator</a></ul>
+      ---------------------------------------------------------------------------->
+
+    </section>
+
+
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+      <a href="https://github.com/j3nsykes">GitHub</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
