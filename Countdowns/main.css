@@ -5,7 +5,7 @@ font-family: 'Source Code Pro',sans-serif ;
   font-weight: 300;
   line-height: 1.6;
   color:#4f23d0;
-  background-color:#dee3e2;
+  background-color:#f2f5f4;
 }
 * {
   box-sizing: border-box;
@@ -18,7 +18,7 @@ font-family: 'Source Code Pro',sans-serif ;
 }
 #title{
   padding: 80px;
-background-color: #dee3e2; /* For browsers that do not support gradients */
+background-color: #f2f5f4; /* For browsers that do not support gradients */
 
 /*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
 
@@ -35,7 +35,6 @@ background-color: #dee3e2; /* For browsers that do not support gradients */
   color:#4f23d0;
   margin: 0;
 }
-
 
 #wrapper {
   padding: 80px;
