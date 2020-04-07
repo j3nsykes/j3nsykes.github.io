@@ -50,7 +50,7 @@ body {
   background-color: #faff00;
   padding: 0.1em;
   margin: 0;
-  display:inline-block;
+  display: inline-block;
 }
 
 #wrapper {
@@ -62,6 +62,7 @@ strong {
 }
 
 .grid-container {
+  display: grid;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
   grid-template-columns: 400px 400px;
