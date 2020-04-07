@@ -56,6 +56,10 @@ body {
   padding: 80px;
 }
 
+#frames{
+
+overflow-y: hidden; /* Hide vertical scrollbar */
+}
 #wrapper h1 {
   font-size: 32px;
   display: inline-block;
