@@ -1,3 +1,11 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/342cdb");
+
+@font-face {
+  font-family: 'Monospace821BT-Roman';
+  src: url('webfonts/342CDB_0_0.eot');
+  src: url('webfonts/342CDB_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/342CDB_0_0.woff2') format('woff2'), url('webfonts/342CDB_0_0.woff') format('woff'), url('webfonts/342CDB_0_0.ttf') format('truetype');
+}
 html,
 body {
   margin: 50;

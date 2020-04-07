@@ -1,81 +1,101 @@
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/342cdb");
+
+@font-face {
+  font-family: 'Monospace821BT-Roman';
+  src: url('webfonts/342CDB_0_0.eot');
+  src: url('webfonts/342CDB_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/342CDB_0_0.woff2') format('woff2'), url('webfonts/342CDB_0_0.woff') format('woff'), url('webfonts/342CDB_0_0.ttf') format('truetype');
+}
 html,
 body {
   margin: 50;
-font-family: 'Source Code Pro',sans-serif ;
+  font-family: 'Source Code Pro', sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  color:#4f23d0;
-  background-color:#f2f5f4;
+  color: #4f23d0;
+  background-color: #ffffff;
 }
+
 * {
   box-sizing: border-box;
 }
+
 #title section {
   width: 100%;
-    margin: 0;
+  margin: 0;
   max-width: 800px;
-
 }
-#title{
+
+#title {
   padding: 80px;
-background-color: #f2f5f4; /* For browsers that do not support gradients */
-
-/*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
-
+  background-color: #ffffff;
+  /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
 }
+
 #title h1 {
   font-size: 72px;
   display: inline-block;
-  color:#4f23d0;
-    margin: 0;
+  color: #4f23d0;
+  margin: 0;
 }
+
 #title h3 {
   font-size: 20px;
   font-weight: 300;
-  color:#4f23d0;
+  color: #4f23d0;
   margin: 0;
 }
 
 #wrapper {
   padding: 80px;
 }
+
 #wrapper h1 {
   font-size: 32px;
   display: inline-block;
   margin: 0 0 1em 0;
   color: #4f23d0;
 }
+
 #wrapper section {
   width: 100%;
   max-width: 800px;
   margin: 0 0 80px 0;
 }
+
 #wrapper section h2 {
   font-size: 20px;
   color: #4f23d0;
   margin: 0;
 }
+
 #wrapper section p {
   margin: 0 0 1em 0;
 }
+
 #wrapper section ul {
-    list-style-type: square;
+  list-style-type: square;
   color: #000;
 }
+
 #wrapper section ul li {
   margin: 0 0 0.5em 0;
-
 }
+
 #wrapper section ul li:before {
   content: "-";
   position: absolute;
   margin: 0 0 0 -20px;
 }
+
 #wrapper section a {
   color: #000;
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
+
 #wrapper section a:hover {
   background: #4f23d0;
   color: #fff;
