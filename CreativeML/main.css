@@ -37,14 +37,18 @@ body {
 #title h1 {
   font-size: 72px;
   display: inline-block;
-  color: #fff;
+  color: #000;
+  background-color: #faff00;
+  padding: 0.1em;
   margin: 0;
 }
 
 #title h3 {
   font-size: 20px;
   font-weight: 300;
-  color: #fff;
+  color: #000;
+  background-color: #faff00;
+  padding: 0.1em;
   margin: 0;
 }
 
