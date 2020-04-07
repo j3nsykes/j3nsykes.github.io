@@ -53,6 +53,10 @@ body {
   display:inline-block;
 }
 
+strong {
+  font-weight: 400;
+}
+
 #wrapper {
   padding: 80px;
 }
