@@ -55,13 +55,24 @@ body {
 #wrapper {
   padding: 80px;
 }
+
 strong {
   font-weight: 400;
 }
-#frames{
 
-overflow-y: hidden; /* Hide vertical scrollbar */
+.grid-container {
+  display: grid;
 }
+
+.griditem {
+  grid-gap: 50px 100px;
+}
+
+#frames {
+  overflow-y: hidden;
+  /* Hide vertical scrollbar */
+}
+
 #wrapper h1 {
   font-size: 32px;
   display: inline-block;
