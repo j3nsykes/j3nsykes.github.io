@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Arduino Setup for ML @JenSykes</title>
+    <!--  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="title">
+
+        <h1>Arduino Setup for ML</h1>
+        <br>
+        <h3>with JenSykes</h3>
+    </div>
+    <div id="wrapper">
+        <section>
+            <h1>Intro : </h1>
+            <p>This page provides a guide to how to start working with Arduino. It is focused on using the Arduino Nano 33 BLE Sense board with the intention of using this for Machine Learning. </p>
+            <p>However, the steps for board setup, verify and upload are the same for any Arduino board.</p>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+            <h2>Download Arduino</h2>
+            <br>
+            <ul><img src="arduinoDownload.png" width="500" height="420"></ul>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+            <h2>Board Setup</h2>
+            <p>Some boards come installed in Arduino as default. For example; the Arduino UNO</p>
+            <p>However, as you use more specialised boards you will need to install these into Arduino before using them</p>
+            <p>You will need to go to <strong>tools > board > boardManager</strong> to open the installation window.</p>
+            <ul><img src="toolBoard.png" width="600" height="250"></ul>
+            <li>Type in Nano BLE and the corresponding board will appear.</li>
+            <li> Click install and it will add the board to Arduino.</li>
+            <li> It may take a few minutes to instal afterwhich you can close the dialog window.</li>
+            <ul><img src="arduinoboard.png" width="570" height="250"></ul>
+            <strong>
+                <p>You may need to restart Arduino to see the board appear in the list.</p>
+            </strong>
+            ---------------------------------------------------------------------------->
+            <h2>Libraries</h2>
+            <p>In order to run specific tasks people have created some great libraries to do the heavy lifting for us.</p>
+            <p>To do Machine Learning on the Arduino Nano 33 there are two key libraries you will need to install.</p>
+            <ul>
+                <a href="https://github.com/arduino-libraries/Arduino_KNN" target="_blank">Simple KNN library</a>
+                <p>to run classification tasks</p>
+            </ul>
+
+            <ul>
+                <a href="https://github.com/arduino-libraries/Arduino_LSM9DS1" target="_blank">Arduino_LSM9DS1 library</a>
+                <p>to access the on-board IMU sensor</p>
+            </ul>
+            <p>You can download the libraries from the above links then add them manually to the libraries folder in Arduino</p>
+            <h4>However, there is an easier way!!!</h4>
+            <p>You can install libraries the same way as boards via the Arduino IDE</p>
+            <p>Got to <strong>Sketch > Include Library > Manage Libraries</strong></p>
+            <ul><img src="libraryinstall.png" width="500" height="300"></ul>
+            <li>Start to type and search for the above libraries.</li>
+            <li>Click install and add the library to Arduino</li>
+            <li>It may take a minute. Close the dialog window once it says installed</li>
+            <ul><img src="arduinolibrLSM9DS1.png" width="500" height="100"></ul>
+
+            ---------------------------------------------------------------------------->
+
+            <h2>Board and Port Selection</h2>
+            <p>In order to upload code onto a physical Arduino board you must first connect the Arduino IDE (software) to the physical board.</p>
+            <p>There are two steps involved in doing this</p>
+            <h4>1) Select the board</h4>
+            <p>We are using a specific board for our tasks. We must tell Arduino which board we are using so it compiles the code correctly.</p>
+            <ul><img src="boardSelect.png" width="640" height="420"></ul>
+            <h4>1) Select the port</h4>
+            <p>The Arduino IDE needs to know where to send the code. The USB port the Arduino board is connected to must be selected so that the code goes to the correct destination.</p>
+            <ul><img src="portSelect.png" width="600" height="420"></ul>
+            ---------------------------------------------------------------------------->
+            <h2>Verify Code</h2>
+            <p>Before you upload your code it is useful to check it compiles first.</p>
+            <p> By pressing <strong>Verify</strong> you are essentially checking for any code errors such as spelling mistakes or missing libraries.</p>
+            <ul><img src="verify.jpg" width="513" height="265"></ul>
+
+            ---------------------------------------------------------------------------->
+            <h2>Upload Code</h2>
+            <p>In order to transfer the code onto the physical Arduino board you must first upload it.</p>
+            <p>Making changes to the text-based code does not automatically live update the physical board. Each time you make a change you want to implement you must press the <strong>Upload</strong> button</p>
+            <ul><img src="upload.jpg" width="513" height="265"></ul>
+
+            ---------------------------------------------------------------------------->
+            <h2>Using Examples</h2>
+            <p>Usually each library you install also comes with a set of examples to help you get started.</p>
+            <p>You can find all the examples in the File tab. For example if you wanted an example in the Simple KNN library you would go to <strong>File > Examples > Arduino_KNN > Simple_KNN</strong></p>
+            <ul><img src="examples.png" width="640" height="420"></ul>
+
+            ---------------------------------------------------------------------------->
+        </section>
+
+        <section>
+
+            ---------------------------------------------------------------------------->
+            <h2>Acknowledgments and References</h2>
+            <p>This guide draws from the following similar instructions</p>
+            <ul><a href="https://blog.arduino.cc/2019/10/15/get-started-with-machine-learning-on-arduino/">Getting started with Machine Learning on Arduino</a></ul>
+            <ul><a href="https://medium.com/tensorflow/how-to-get-started-with-machine-learning-on-arduino-7daf95b4157" target="_blank">Original Tensorflow Blog by Sandeep Mistry and Dominic Pajak</a></ul>
+
+            ---------------------------------------------------------------------------->
+
+        </section>
+
+
+        <section>
+
+            <h2>J3n Sykes</h2>
+            <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+            <p><a href="https://github.com/j3nsykes">GitHub</a></p>
+        </section>
+
+    </div>
+
+</body>
+
+</html>
