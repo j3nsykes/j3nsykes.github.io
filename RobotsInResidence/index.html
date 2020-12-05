@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Robots in Residence</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Robots in Residence</h1>
+    <br>
+    <h3>A collaborative residency with Tom Krasny.</h3>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>A month long residency throughout November 2020 in association with the Geothe Institute</p>
+      <p>A humanoid NAO robot toured several cities across Europe and was taught a new skill at each city. This page
+        documents its experience in Glasgow residency the new skills it learnt. </p>
+      <br>
+      <h2>Concept: </h2>
+      <p>Throughout this residency we wanted to reflect on the negative way in which robots are portrayed in popular
+        culture. Often it is
+        considered in a “zero sum game” sort of way where robots are either thought of as a threat to jobs, or
+        considered as functional objects replacing humans in mundane repetitive work. Both of these are considerations
+        of an ableist capitalist reality where value is measured through productivity levels. On top of that while
+        humanoid robots are seen as separate “species”, they are not because their production doesn’t happen in
+        isolation of any human input. We aimed to examine these assumptions by teaching the NAO skills that relfect on a
+        softer appoach to empowerment. </p>
+      <br>
+      <h2>Tracking: </h2>
+      <p>Our first instincts were to try and use existing Machine Learning models to automate a tracking of different
+        dance poses.
+        We would then break these poses down and translate this information to NAO. We used <a
+          href="https://runwayml.com/">Runway ML</a> and the Open PifPaf model to analyse dance videos and generate
+        tracked poses. </a></p>
+        <div id="frames">
+        <section>
+          <div class="grid-container">
+            <div class="grid-item"><img src="openPose.gif" width="401" height="300"></div>
+            <div class="grid-item"><img src="poseNet.gif" width="401" height="300"></div>
+           
+  
+          </div>
+      <p>Each joint could be tracked and visualised with a colourful dot. The intention being the NAO could track the
+        moving dot using its 'Red Ball Tracker' object to translate the movement into it's own joint</p>
+        <div id="frames">
+          <section>
+            <div class="grid-container">
+              <div class="grid-item"><img src="tracking.jpg" width="800" height="450"></div>
+    
+            </div>
+      <p>We discovered the more fluid mapping of one movement to another was problematic for the NAO in the Chroeographe
+        Software where its building block style coding environment was more suited to colour tracking working with
+        distinct outputs such as on/off type triggers. </p>
+      <p>With this in mind we approach the tracking from a human perspective, using the generated videos to help us
+        break down each dance pose in more detail to then pass this information on to the NAO.</p>
+      <p><i>---->Image of us teaching ourselves poses?</i></p>
+      <br>
+      <h2>Autonomous: </h2>
+      <p>We adapted our teaching approach to use the Animation Timeline and Autonomouse Mode with the NAO. This provided
+        us with the a more flexible, fluid mode of teaching the poses.
+        By manualling moving each joint into position we could act as the translator between our own knowledge and the
+        NAO's understanding.
+      </p>
+      <p><i>Image of us teaching NAO poses</i></p>
+      <p>It was interesting for us to note how our own dissemination of the information had to change in order to
+        translate it to the NAO.
+        We took on a role of 'thinking like a computer' in order to breakdown each pose in a way the NAO could interpet
+        effectively. Certain movements we thought possible had to be revised due to the NAO's join limitations.
+      </p>
+      <p><i>---->Image of us teaching NAO poses # 2</i></p>
+      <br>
+      <h2>Pronouns: </h2>
+      <p>Often within computing any identification processes have potential to come with bias either from the sources of
+        identification they have been trained on or via programmers providing such data. </p>
+      <p>The pre-existing building blocks with Choreograph point towards some of these problematic areas with Gender
+        Identifying and Facial Recognition code blocks. We reflected on this bystaging our own speech recognition
+        process. In <i>"having a conversation" </i>"with the NAO we wim to demonstrate the flexibility a robot can have
+        in learning new protocols such as affirming people's pronouns.
+        Which humans can find more difficult to adjust to. </p>
+      <p><i>---->Image of Tom in conversation with NAO</i></p>
+      <br>
+      <h2>Voguing: </h2>
+      <p>Voguing stems from the danceform developed within the Black, Latinx and Gay Ballroom Scene of Harlem/New York
+        (its roots can be traced back to Harlem’s drag ballroom competitions as early as the 1920s. it is important to
+        us to acknowledge and pay respect to the origins of this style and use the opportunity we got to uplift it.
+        Developed by people who were denied access to aspects of sexist and capitalist mainstream society because of the
+        intersection of gender identity and race. It orginated as means to taking up space, showing up and demonstrating skill, power
+        sophistication and wit in a non oppressive way.
+
+        Ballroom competitions created an inclusive space for empowerment, belonging and creative and subjective
+        expression which we were keen for NAO to model and point to by teaching it this style.
+      </p>
+      <p><i>---->Image of Pose in action</i></p>
+      <div id="frames">
+        <section>
+          <div class="grid-container">
+            <div class="grid-item"><img src="007.jpg" width="800" height="450"></div>
+  
+          </div>
+      <p>As the residency progressed we used the methods mentioned above to teach the NAO a Vogue sequence. The video below demonstrates the complete sequnce.</p>
+      <br>
+      <p><i>Video by Ambroise here with credit and link to website. </i></p>
+    </section>
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <section>
+        <div class="grid-container">
+          <div class="grid-item"></div>
+
+        </div>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+      <a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.com">Website</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
