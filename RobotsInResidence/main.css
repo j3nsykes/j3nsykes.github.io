@@ -117,8 +117,24 @@ strong {
   margin: 0;
 }
 
+#wrapper section h3{
+  font-size: 16px;
+  font-weight: 400;
+  color: #000;
+  background-color: #faff00;
+  padding: 0.1em;
+  margin: 0;
+  display: inline-block;
+
+}
+
+#sub {
+  font-size: 12px;
+  font-weight: 300;
+
+}
 #wrapper section p {
-  margin: 0 0 1em 0;
+  margin: 3px 0 1em 0;
 }
 
 #wrapper section ul {
