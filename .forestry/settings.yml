@@ -3,7 +3,18 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: heading
+  label: Site
+- type: document
+  path: j3nsykes.github.io/index.html
+  label: home
+  match: "**/*"
+- type: directory
+  path: ''
+  label: directory
+  create: all
+  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
