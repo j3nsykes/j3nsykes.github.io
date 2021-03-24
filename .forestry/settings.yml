@@ -1,7 +1,7 @@
 ---
 new_page_extension: md
 auto_deploy: false
-admin_path: 
+admin_path: ''
 webhook_url: 
 sections:
 - type: heading
@@ -9,7 +9,6 @@ sections:
 - type: document
   path: j3nsykes.github.io/index.html
   label: home
-  match: "**/*"
 - type: directory
   path: ''
   label: directory
