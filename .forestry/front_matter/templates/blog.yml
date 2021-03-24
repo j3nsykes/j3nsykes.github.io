@@ -1,4 +1,18 @@
 ---
 label: blog
 hide_body: false
-fields: []
+fields:
+- name: header
+  type: text
+  config:
+    required: false
+  label: header
+- name: paragraph
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: paragraph
