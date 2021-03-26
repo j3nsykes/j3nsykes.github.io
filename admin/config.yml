@@ -20,7 +20,7 @@ collections:
 
   - name: "RobotsInResidence"
     label: "Robots"
-    folder: 
+    folder: "RobotsInResidence/" 
     - label: "Robottext"
       name: "robots"
       file: "RobotsInResidence/index.html" # The path to the folder where the documents are stored
