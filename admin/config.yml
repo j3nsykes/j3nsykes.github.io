@@ -18,9 +18,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
 
-- name: "Robot"
-  label: "robots"
-  files: 
+  - name: "Robot" #
+    label: "robots" #
+    files: 
     - label: "robotResidency"
       name: "robotResidency"
       file: "RobotsInResidence/index.html"
@@ -29,9 +29,9 @@ collections:
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "text"}
 
-- name: "Home"
-  label: "home"
-  files: 
+  - name: "Home"
+    label: "home"
+    files: 
     - label: "Homepage"
       name: "homepage"
       file: "index.html"
