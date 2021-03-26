@@ -19,12 +19,11 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "RobotsInResidence"
-      label: "Robots"
-          folder: "RobotsInResidence/" # The path to the folder where the documents are stored
+    label: "Robots"
+    folder: "RobotsInResidence/" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
     slug: "{{slug}}"
     fields: # The fields for each document, usually in front matter
       - {label: "Title", name: "title", widget: "string"}
-      - {label: "Weight", name: "weight", widget: "number"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Body", name: "body", widget: "markdown"}
