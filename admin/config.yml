@@ -27,7 +27,7 @@ collections:
       fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "Home"
     label: "home"
@@ -38,4 +38,4 @@ collections:
       fields: 
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Body", name: "body", widget: "text"}
+      - {label: "Body", name: "body", widget: "markdown"}
