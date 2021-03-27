@@ -107,6 +107,7 @@ strong {
 
 #frames {
   overflow-y: hidden;
+  overflow-x: hidden;
   /* Hide vertical scrollbar */
 }
 
