@@ -1,14 +1,13 @@
----
-title: testRobots
----
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="/css/lazy-load-images.min.css">
+<script src="/js/lazy-load-images.min.js"></script>
 
 <head>
   <meta charset="utf-8">
   <title>Robots in Residence</title>
   <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
-  <link rel="stylesheet" href="main.css">
+  <link rel="stylesheet" href="/main.css">
 </head>
 
 <body>
@@ -19,18 +18,18 @@ title: testRobots
   </div>
   <div id="wrapper">
     <section>
-      <h2>Context : </h2>
-      <p>A month long residency throughout November 2020 commissioned by the Geothe Institute as part of their
+      <h1>Context : </h1>
+      <p>A month long residency throughout November 2020, commissioned by the Goethe Institute as part of their
         ‘Generation A = Algorithm’ programme, whose aim is to encourage people to reflect on the consequences,
         challenges and dangers of Artificial Intelligence.</p>
       <p>
         As part of this programme, a humanoid NAO robot toured several cities across Europe and was taught a new skill
-        by local artists at each city. This page documents our experience working with the NAO during its residency
+        by local artists in each city. This page documents artists Jen Sykes and Tom Krasny's experience working with the NAO during its residency
         Glasgow and the new skills it was taught.
       </p>
       <br>
-      <h2>Concept: </h2>
-      <p>Both Tom and I are passionate about pedagogy as a liberatory and creative practice.</p>
+      <h1>Concept: </h1>
+      <p>Both Tom <i>(they/them)</i> and Jen <i>(she/her)</i> are passionate about pedagogy as a liberatory and creative practice.</p>
       <p>
         In this project, we wanted to divert from commonplace views and conversations framing robots as opponents or a
         “separate species” to humans. We perceive this assumption as false since the production of robots does not
@@ -48,16 +47,15 @@ title: testRobots
       </p>
       <p>
         Therefore, we opted to teach “Gaia” (the name that our NAO was assigned) practices that affirm subjectivity,
-        non-conforming self-expression and an alternative to oppressive interaction. We wanted to demonstrate that
-        by
-        learning this, robots can actually help to introduce a positive and necessary change in social perception,
+        non-conforming self-expression and an alternative to oppressive patterns of interaction. We wanted to demonstrate that
+        by learning this, robots can actually help to introduce a positive and necessary change in social perception,
         and
-        promote inclusivity, respect and curiosity to differences.</p>
+        promote an awareness, respect and curiosity to differences.</p>
       <p>
         Both of the skills we taught Gaia are rooted in LGBTQ history and stem from our lived experience moving
-        through urban spaces.
+        through urban and public spaces.
       </p>
-      <h2>Skill #1: Voguing</h2>
+      <h1>Skill #1: Voguing</h1>
       <p>
         Vogue is a danceform developed within the Black, Latinx and Gay Ballroom Scene of Harlem, New York (its
         roots
@@ -73,10 +71,7 @@ title: testRobots
         uplift to
         by teaching it this style.
       </p>
-      <p><i>---->Video clip reference of Voguing</i></p>
-      <p><i>---->Add more references to history of Vogue here </i></p>
-      <br>
-      <h2>Teaching processes and methods: </h2>
+      <h1>Teaching processes and methods: </h1>
       <h3>Machine to Machine</h3>
       <p>Our first instincts were to try and use existing Machine Learning models to automate a tracking of
         different
@@ -84,139 +79,159 @@ title: testRobots
         We would then break these poses down and translate this information to NAO. We used <a
           href="https://runwayml.com/">Runway ML</a> and the Open PifPaf model to analyse dance videos and
         generate
-        tracked poses. </a></p>
-      <div id="frames">
-        <section>
-          <div class="grid-container">
-            <div class="grid-item"><img src="openPose.gif" width="401" height="300"></div>
-            <div class="grid-item"><img src="poseNet.gif" width="401" height="300"></div>
-          </div>
-          <div id="sub">
-            <p>Video referenced from <a href="https://youtu.be/9T0rmPW7g7k">Hand performance tutorial | Faded |
-                Choreography by Teddy</a></p>
-          </div>
-          <br>
-          <p>Each joint could be tracked and visualised with a colourful dot. The intention being the NAO could
-            track the moving dot using its 'Red Ball Tracker' object to translate the movement into its own
-            joint We discovered the more fluid mapping of one movement to another was problematic for the NAO in
-            the Chroeographe Software where its building block style coding environment was more suited to
-            colour tracking working with distinct outputs such as on/off type triggers. With this in mind we
-            approach the tracking from a human perspective, using the generated videos to help us break down
-            each dance pose in more detail to then pass this information on to the NAO. </p>
-          <div id="frames">
-            <section>
-              <div class="grid-container">
-                <div class="grid-item"><img src="tracking.jpg" width="800" height="450"></div>
-              </div>
-              <h3>Human to Machine</h3>
-              <p>We adapted our teaching approach to use the Animation Timeline and Autonomous Mode with the
-                NAO. This provided us with a more flexible, intuitive mode of teaching the poses. By manually
-                moving each individual joint into position, we could act as the translator between our own
-                knowledge and the NAO's understanding.
-              </p>
-              <p>It was interesting for us to note how our own dissemination of the information had to change in
-                order to translate it to the NAO. We took on a role of 'thinking like a computer' in order to
-                breakdown each pose in a way the NAO could interpret effectively. Certain movements we thought
-                possible had to be revised due to the NAO's joint movement range which is different than a
-                humans’. </p>
-              <p><i>---->Image of us teaching ourselves poses?</i></p>
-              <br>
-              <p>As the residency progressed we used the methods mentioned above to teach the NAO a Vogue
-                sequence. The video below includes a documentation the complete sequence. Video by Ambroise here
-                with credit and link to website.
-              </p>
-              <p><i>---->Image of us teaching NAO poses</i></p>
-              <p><i>---->Image of us teaching NAO poses # 2</i></p>
-              <br>
-              <h2>Skill #2: Pronouns</h2>
-              <h3>What are Pronouns?</h3>
-              <p>“Pronouns are the words someone may use in place of their name. Some examples include
-                <strong>“she/her”</strong>
-                or <strong>“he/him” </strong>or gender-neutral pronouns, such as <strong>“ze/hir,”</strong> [pronounced:
-                zee/heer] or <strong>“they/them”</strong>.
-                Some people use specific pronouns, any pronouns, or none at all.
-              </p>
-              <h3>Importance of pronouns to well being</h3>
-              <p>
-                Pronouns, a way to streamline language, have historically emphasized a binary construction of
-                gender in many languages, including English (Butler, 1999). While many people use a pronoun
-                associated with their sex assigned at birth, gendered pronouns, and the assumptions behind
-                them, may represent a daily stressor for LGBTQ people, particularly people who are transgender
-                and nonbinary (TGNB).</p>
-              <p>
-                Pronouns can sometimes be a signifier for someone’s gender identity but not always. We do
-                not
-                want to assume people’s gender identity based on expression (typically shown through
-                clothing,
-                hairstyle, mannerisms etc.) By providing an opportunity for people to share their pronouns,
-                we
-                communicate that we’re not making the assumption that their gender identity is based on
-                their
-                appearance.”[1][2]
-              </p>
-              <div id="sub">
-                <p>
-                  [1]<a href="https://www.glsen.org/activity/pronouns-guide-glsen">
-                    https://www.glsen.org/activity/pronouns-guide-glsen</a>
-                </p>
-                <p>[2]<a
-                    href="https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth">
-                    https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth</a>
-                  </i></p>
-              </div>
-              <br>
-              <h3>Empathetic communication protocals as alternative to implicit biases</h3>
-              <p>Often within computing any identification processes have potential to come with an inherent
-                bias either from the sources of identification they have been trained on or via the methods adapted by
-                programmers. The NAO’s pre-existing building blocks in Choreograph point towards
-                some of these problematic areas within the Gender Identifying and Facial Recognition code blocks.
-                We reflected on non-harming alternatives to this by staging our own speech recognition
-                process. In <strong>"having a conversation" </strong>with the NAO we aimed to demonstrate the
-                flexibility a
-                robot can have in learning new protocols such as affirming people's pronouns. Which humans
-                can find more difficult to adjust to.</p>
-              <p>As part of this conversation, Tom shared their Hebrew pronouns with Gaia, to which Gaia
-                responded neutrally and supportively.</p>
-              <h3>The importance and advantages of empathetic communication in the context of pronouns use</h3>
-              <p>Setting a norm of sharing pronouns in introductions gives everyone an opportunity to self identify
-                instead of assuming someone’s identity or which pronouns they use. It indicated that gender identity is
-                subjective rather than assigned. Including pronouns is a first step toward respecting people’s identity
-                and creating a more welcoming space for people of all genders.</p>
-              <p>
-                Research shows Affirming LGBTQ youth’s gender by using pronouns that align with their gender
-                identity has been shown to improve mental health outcomes. Specifically, The Trevor
-                Project’s 2020 National Survey on LGBTQ Youth Mental Health found that TGNB youth who
-                reported having their pronouns respected by all or most of the people in the lives attempted
-                suicide at half the rate of those who did not have their pronouns respected.[3]</p>
-              <div id="sub">
-                <p><i>[3]: <a
-                      href=https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth>The
-                      Trevor
-                      Project, 2020</a></i>
-                </p>
-              </div>
-              <p>We are extremely excited by the possibilities of disrupting gender-uninformed and biased
-                communication protocols. </p>
-              <p><i>---->Image of Tom in conversation with NAO</i></p>
-              <br>
-            </section>
-            ---------------------------------------------------------------------------->
-            <div id="frames">
-              <section>
-                <div class="grid-container">
-                  <div class="grid-item"></div>
-                </div>
-            </div>
-        </section>
-        ---------------------------------------------------------------------------->
-        <section>
-          <h2>J3n Sykes</h2>
-          <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
--->
-          <a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
-          </p>
-        </section>
+        tracked poses.</p>
+    </section>
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-itemLandscape"> <a href="/images/pifpaf.gif" class="lazy-load replace">
+            <img src="/images/pifpaf.gif" class="preview" alt="benchesBBC" frameborder="0" />
+          </a></div>
       </div>
+    </div>
+    <section>
+      <div id="sub">
+        <p>Video referenced from <a href="https://youtu.be/9T0rmPW7g7k">Hand performance tutorial | Faded |
+            Choreography by Teddy</a></p>
+      </div>
+      <br>
+      <p>Each joint could be tracked and visualised with a colourful dot. The intention being the NAO could
+        track the moving dot using its 'Red Ball Tracker' object to translate the movement into its own
+        joint We discovered the more fluid mapping of one movement to another was problematic for the NAO in
+        the Chroeographe Software where its building block style coding environment was more suited to
+        colour tracking working with distinct outputs such as on/off type triggers. With this in mind we
+        approach the tracking from a human perspective, using the generated videos to help us break down
+        each dance pose in more detail to then pass this information on to the NAO. </p>
+    </section>
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-itemLandscape"> <a href="/images/tracking.jpg" class="lazy-load replace">
+            <img src="/images/tracking.jpg" class="preview" alt="benchesBBC" frameborder="0" />
+          </a></div>
+      </div>
+    </div>
+    <section>
+      <br>
+      <h3>Human to Machine</h3>
+      <p>We adapted our teaching approach to use the Animation Timeline and Autonomous Mode with the
+        NAO. This provided us with a more flexible, intuitive mode of teaching the poses. By manually
+        moving each individual joint into position, we could act as the translator between our own
+        knowledge and the NAO's understanding.
+      </p>
+      <p>It was interesting for us to note how our own dissemination of the information had to change in
+        order to translate it to the NAO. We tput ourselves in a of 'thinking like a computer' mode in order to
+        break down each pose in a way the NAO could interpret effectively. Certain movements we thought
+        possible had to be revised due to the NAO's joint movement range which is different than a
+        humans’. </p></section>
+        <div id="frames">
+          <div class="grid-containerLandscape">
+            <div class="grid-itemLandscape"> <a href="/images/naovideopose.png" class="lazy-load replace">
+                <img src="/images/naovideopose.png" class="preview" alt="benchesBBC" frameborder="0" />
+              </a></div>
+          </div>
+        </div>
+      <section>
+      <p>As the residency progressed we used the methods mentioned above to teach the NAO a Vogue
+        sequence that we created using individual movements we liked and re-interpreted for NAO. The video below includes a documentation of the complete sequence. 
+        ----> Video by Ambroise here with credit and link to website.
+      </p>
+    </section>
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-itemLandscape"> <a href="/images/naoposes2.png" class="lazy-load replace">
+            <img src="/images/naoposes2.png" class="preview" alt="benchesBBC" frameborder="0" />
+          </a></div>
+          <div class="grid-itemLandscape"> <a href="/images/naoposes3.png" class="lazy-load replace">
+            <img src="/images/naoposes3.png" class="preview" alt="benchesBBC" frameborder="0" />
+          </a></div>
+      </div>
+    </div>
+      <section>
+      <h1>Skill #2: Pronouns</h1>
+      <h3>What are Pronouns?</h3>
+      <p>“Pronouns are the words someone may use in place of their name. Some examples include
+        <strong>“she/her”</strong>
+        or <strong>“he/him” </strong>or gender-neutral pronouns, such as <strong>“ze/hir,”</strong> [pronounced:
+        zee/heer] or <strong>“they/them”</strong>.
+        Some people use specific pronouns, any pronouns, or none at all.
+      </p>
+      <h3>Importance of pronouns to well being</h3>
+      <p>
+        Pronouns, a way to streamline language, have historically emphasized a binary construction of
+        gender in many languages, including English (Butler, 1999). While many people use a pronoun
+        associated with their sex assigned at birth, gendered pronouns, and the assumptions behind
+        them, may represent a daily stressor for LGBTQ people, particularly people who are transgender
+        and nonbinary (TGNB).</p>
+      <p>
+        Pronouns can sometimes be a signifier for someone’s gender identity but not always. We do
+        not
+        want to assume people’s gender identity based on expression (typically shown through
+        clothing,
+        hairstyle, mannerisms etc.) By providing an opportunity for people to share their pronouns,
+        we
+        communicate that we’re not making the assumption that their gender identity is based on
+        their
+        appearance.”[1][2]
+      </p>
+      <div id="sub">
+        <p>
+          [1]<a href="https://www.glsen.org/activity/pronouns-guide-glsen">
+            https://www.glsen.org/activity/pronouns-guide-glsen</a>
+        </p>
+        <p>[2]<a href="https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth">
+            https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth</a>
+          </i></p>
+      </div>
+      <br>
+      <h3>Empathetic communication protocols as alternative to implicit biases</h3>
+      <p>Often within computing any identification processes have potential to come with an inherent
+        bias either from the sources of identification they have been trained on or via the methods adapted by
+        programmers. The NAO’s pre-existing building blocks in Choreograph point towards
+        some of these problematic areas within the Gender Identifying and Facial Recognition code blocks.
+        We reflected on non-harming alternatives to this by staging our own speech recognition
+        process. In <strong>"having a conversation" </strong>with the NAO we aimed to demonstrate the
+        flexibility a
+        robot can have in learning new protocols such as affirming people's pronouns. Which humans
+        can find more difficult to adjust to due to engrained societal perceptions and beliefs.</p>
+      <p>As part of this conversation, Tom shared their Hebrew pronouns with Gaia, to which Gaia. Following affirming instructions we introduced in advance,
+        Gaia responded in a neutral and supportive manner.</p>
+      <h3>The importance and advantages of empathetic communication in the context of pronouns use</h3>
+      <p>Setting a norm of sharing pronouns in introductions gives everyone an opportunity to self identify
+        instead of automatically assuming someone’s identity or which pronouns they use. It indicated that gender identity is
+        subjective rather than assigned. Including pronouns is a first step toward respecting people’s identity
+        and creating a more welcoming space for people of all genders.</p>
+      <p>
+        Research shows Affirming LGBTQ youth’s gender by using pronouns that align with their gender
+        identity has been shown to significantly improve mental health outcomes. Specifically, The Trevor
+        Project’s 2020 National Survey on LGBTQ Youth Mental Health found that TGNB youth who
+        reported having their pronouns respected by all or most of the people in the lives attempted
+        suicide at half the rate of those who did not have their pronouns respected.[3]</p>
+      <div id="sub">
+        <p><i>[3]: <a
+              href=https://www.thetrevorproject.org/2020/07/29/research-brief-pronouns-usage-among-lgbtq-youth>The
+              Trevor
+              Project, 2020</a></i>
+        </p>
+      </div>
+      <p>We are extremely excited by the possibilities of disrupting gender-uninformed and biased
+        communication protocols that can further emerge from the example we tried with GAIA. </p>
+    </section>
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-itemLandscape"> <a href="/images/TomNao.png" class="lazy-load replace">
+            <img src="/images/TomNao.png" class="preview" alt="NAO" frameborder="0" />
+          </a></div>
+      </div>
+    </div>
+
+    ---------------------------------------------------------------------------->
+    <section>
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+      <a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
+      </p>
+    </section>
+  </div>
 </body>
 
 </html>
