@@ -18,12 +18,21 @@
   <div id="wrapper">
     <section>
       <h1>Summary: </h1>
-      <p>Creative Coding in practical form and in “critical engagement with digital media has become a part of the art education curriculum” (1) in recent years, providing new material approaches to practice-based teaching. This newer material approach to technology provides important potential for creative expression and pathways within creative industries for experiential approaches. However, there still remains a friction between materials used for solution driven outputs and how they can be used in experimental forms.
+      <p>Creative Coding in its practical form and in “critical engagement with digital media has become a part of the art education curriculum” (1) in recent years, providing new material approaches to a Studio-based model of pedagogy in Art Schools.
+        This newer material approach to the use of technology provides important potential for creative expression and pathways within creative industries for experiential approaches. 
+        However, there still remains a friction in how a materials, originating in instructional modes of delivery, can be translated to creative practices where there is an emphasis on reflection, process and practice. 
       </p>
+      <p>This practice-based research examines the approach to teaching Creative Coding curricula specifically in Art Schools, through the term ‘Functional Error’. A Functional Error  in this research is defined as as a piece of code that compiles without error in software yet in the physical environment, it results in a kinetic or visual error. Whilst systematic in its definition a Functional Error is also the result of a gap in conceptual understanding between established and new creative disciplines.</p>
       <p>When transitioning from a predominantly screen-based exploration of creative code to electronic physical components, beginners are faced with three areas to troubleshoot; the software, the hardware, and the bridging of the two together. This research seeks to question how the bridge between software and hardware can be communicated more effectively for students in an Art School environment and if in doing so, what are the educational benefits of exploring these functional errors for staff and students?</p>
-      <p>The term functional error exists within Computer Science as the handling of errors in programmable functions or if an expected function negatively impacts the behaviour of the software. However, this research seeks to establish a definition of functional error as a piece of code that compiles without error in software yet in the physical environment, it results in a kinetic or visual error. This type of error is often the result of a disconnect between what a microcontroller can achieve and what a human eye or mechanical component can enact. It can also be the result of a conceptual misunderstanding as to what the software may enact as a visual output.</p>
 <p>When discussing the bridge between software and hardware the term bridge is defined in two parts. The first, a physical communication protocol between code (software) and an electronic circuit (hardware). The second, as the conceptual space that joins these elements. The bridge is often only made tangible via a cable joining software and hardware together and as such it can become difficult to troubleshoot from a conceptual and practical perspective.</p>
-    </section>
+<p>In this research I will produce tangible tools focusing on three key areas; feedback, exploration and augmentation. Each practical prototype seeks to provide users access to metaphors, language and creative agency in an environment where “visually inclined practitioners—who are often guided by instinct encounter the formal and unforgiving world of syntax, algorithms,and logic.”(2)</p>   
+<br>
+<div id="sub">
+<i>
+<p>(1)[1]	Aaron D. Knochel & Ryan M. Patton (2015) If Art Education Then Critical Digital Making: Computational Thinking and Creative Code, Studies in Art Education, 57:1, 21-38, DOI: 10.1080/00393541.2015.11666280</p>
+<p>(2)Hansen, SM 2019, 'public class Graphic_Design implements Code { // Yes, but how? }: an investigation towards bespoke Creative Coding programming courses in graphic design education', Aarhus Universitet, Aarhus.</p>
+</i></div>
+</section>
     <!-- <div id="frames">
       <div class="grid-container">
         <div class="grid-item"> <a href="/images/IMG_6601.jpg" class="lazy-load replace">
@@ -54,33 +63,82 @@
     </section>
     ---------------------------------------------------------------------------->
     <section>
-    <h1>Bridge Prototype #01 (Explore) : </h1>
+    <h1>Feedback : </h1>
 
-    <p>The iterative process of a capacitive grid controller. </p>
-    <p>The role of Bridge Prototype 01 is to be used as an explorative device in understanding the relationship between chnaging certain variables such as timing.</p>
+    <p>Currently the focus of troubleshooting errors in programming languages is via highlighting syntax errors (linting) in the software or IDE. However, as Artists and Designers there are wide conceptual reasons for using code resulting in the pushing of creative and programmable boundaries. As <i>Functional Errors</i> also include conceptual misunderstandings of what outputs will result from certain programming methods, it is important to explore how this can be fedback to users.  </p>
+    <p>When considering physical computing, students may find a visual or kinetic output that differs from what they expect from their code. As their code is technically correct it will not feedback any runtime errors. Therefore, this shield explores an alternate pedagogical method of providing legible, immediate feedback regarding what the microcontroller is actually executing. </p>
+    <p>An example would be a servo motor that is intended to move 0 -180 degrees but is only moving 0 - 60 degrees. The code compiles without error but the user has not considered the timing of the commands being executed. Therefore, the motor does not have enough time to fully move to 180 degrees before reaching then end of the loop function. Without the conceptual understanding of timing and kinetic movement it may be difficult for a user to debug this error. </p>
+    <p>The aim of this Arduino Uno shield is to listen to input and output activity on the Uno pins and provide visual colour coded feedback based on the behaviour executed. </p>  
+  <p>
+    <ul>
+      <li>Digital pin is HIGH a light will be green</li>
+      <li>Digital pin is LOW a light will be red</li>
+      <li>PWM pin is pulsing a light will be blue at the intensity and timing of that value</li>
+    </ul>
+  </p> 
+  <p>As such the example above would be illustrated as a very fast pulsing blue LED signifying the message is being executed far faster than the servo motor can move. </p> 
+<p>Should a user be accidentally sending a message out of a different pin to which a component is plugged into then this should also be evident via the number LED that is on or off.  </p>  
   </section>
+  
     <div id="frames">
-      <div class="grid-container">
-        <div class="grid-item"> <a href="/images/IMG_6599.jpg" class="lazy-load replace">
-            <img src="/images/IMG_6599.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+      <div class="grid-containerLandscape">
+        <div class="grid-item"> <a href="/images/FeedbackShieldBreakdown.jpg" class="lazy-load replace">
+          <img src="/images/FeedbackShieldBreakdown.jpg" class="preview" alt="FeedbackShieldBreakdown" frameborder="0" />
+        </a></div>
+        <div class="grid-item"> <a href="/images/sidebyside.jpg" class="lazy-load replace">
+            <img src="/images/sidebyside.jpg" class="preview" alt="FeedbackShield" frameborder="0" />
           </a></div>
-        <div class="grid-item"> <a href="/images/IMG_6510.jpg" class="lazy-load replace">
-            <img src="/images/IMG_6510.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
-          </a></div>
-        <div class="grid-item"> <a href="/images/IMG_6600.jpg" class="lazy-load replace">
-            <img src="/images/IMG_6600.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
-          </a></div>
-        <div class="grid-item"> <a href="/images/IMG_6602.jpg" class="lazy-load replace">
-            <img src="/images/IMG_6602.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+        <!-- <div class="grid-item"> <a href="/images/IMG_7423.jpg" class="lazy-load replace">
+            <img src="/images/IMG_7423.jpg" class="preview" alt="FeedbackShield" frameborder="0" />
+          </a></div> -->
+        <div class="grid-item"> <a href="/images/pindoc.jpg" class="lazy-load replace">
+            <img src="/images/pindoc.jpg" class="preview" alt="shieldbreakdowncolour" frameborder="0" />
           </a></div>
           <!-- <div class="grid-item"> <a href="/images/IMG_6601.jpg" class="lazy-load replace">
             <img src="/images/IMG_6601.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
           </a></div> -->
-          <div class="grid-item"> <a href="/images/clay.gif" class="lazy-load replace">
-            <img src="/images/clay.gif" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
-          </a></div>
       </div>
-  </div>
+      <section>
+    </section>
+      ---------------------------------------------------------------------------->
+      <section>
+        <h1>Explore : </h1>
+    
+        <p>This expressive prototype aims to give users creative agency to explore controlling input parameters via alternate materials and gestures.</p>
+        <p>This capacitive grid of sensors provides a surface area to calculate X,Y,Z position of user fingers on conductive materials such as clay. In doing so, the user can plug in and manipulate input variables within their piece of creative code. Examples might be;
+          <ul>
+            <li>size</li>
+            <li>speed</li>
+            <li>colour</li>
+          </ul>
+        </p>
+        <p>This tool aims to offer a method to explore text-based code via gestural, tangible means. It questions if this can have an impact on a users’ pedagogical understanding of the fundamental concepts of computer code. </p>
+     <p>Future iterations aim to implement machine learning methods such as regression to utilise personalised gestures for input control. </p>
+</section>
+    
+        <div id="frames">
+          <div class="grid-container">
+            <div class="grid-item"> <a href="/images/IMG_6599.jpg" class="lazy-load replace">
+                <img src="/images/IMG_6599.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div>
+            <div class="grid-item"> <a href="/images/IMG_6510.jpg" class="lazy-load replace">
+                <img src="/images/IMG_6510.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div>
+            <div class="grid-item"> <a href="/images/IMG_6600.jpg" class="lazy-load replace">
+                <img src="/images/IMG_6600.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div>
+            <div class="grid-item"> <a href="/images/IMG_6602.jpg" class="lazy-load replace">
+                <img src="/images/IMG_6602.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div>
+              <!-- <div class="grid-item"> <a href="/images/IMG_6601.jpg" class="lazy-load replace">
+                <img src="/images/IMG_6601.jpg" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div> -->
+              <div class="grid-item"> <a href="/images/clay.gif" class="lazy-load replace">
+                <img src="/images/clay.gif" class="preview" alt="Cambodia Angkorwat" frameborder="0" />
+              </a></div>
+          </div>
+  </div>  
+  <section></section>
 
     ---------------------------------------------------------------------------->
 
