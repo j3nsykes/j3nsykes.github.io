@@ -216,7 +216,7 @@ strong {
 }
 
 #wrapper section ul li:before {
-  content: "-";
+  
   position: absolute;
   margin: 0 0 0 -20px;
 }
@@ -226,7 +226,12 @@ strong {
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
-
+#highlight a{
+  color: #000;
+  background-color: #faff00;
+  padding: 0.1em;
+  text-decoration: none;
+}
 #wrapper section a:hover {
   color: #000;
   background-color: #faff00;
