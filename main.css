@@ -92,6 +92,13 @@ strong {
   grid-template-rows: 270px 600px;
   align-content: space-evenly;
 }
+.grid-containerSingle {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 600px;
+  align-content: space-evenly;
+}
 .grid-containerLandscape {
   display: grid;
   grid-column-gap: 5px;
