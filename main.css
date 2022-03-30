@@ -229,6 +229,7 @@ strong {
 #highlight a{
   color: #000;
   background-color: #faff00;
+  border:none;
   padding: 0.1em;
   text-decoration: none;
 }
