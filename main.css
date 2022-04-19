@@ -238,3 +238,7 @@ strong {
   background-color: #faff00;
   padding: 0.1em;
 }
+
+.nav.nav.preview-nav{
+  display:none;
+}
