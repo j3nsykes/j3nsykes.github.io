@@ -26,11 +26,10 @@
       <section>
         <h1>Animation vs Drawing : </h1>
         <div class="grid-containerWide">
-          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549444/embed/?plusEmbedHash=ODQ3YzZjOTIwOWQ4MTA5ZjA1OGJkZWIwMWNjMDQ2OWQxYjMyYTViOTRkYmI4ZWUxOTFkZDU2MzdiNmIxNmIwMmZmZWQwY2M5NzZhZGFlMDE5ZTdiOWM5NjhhNTk5NWM4NjI4ZDI4NDI5ZWY0MzU4ZjExYzkxMjk0ZDY5NzI4YjFHSW9JUUdyVUJrcVlYSW9jYnRkd0hlT0FrL0ZrM1N2ZkhxZS9rb2JNdGZUVC9BN0sxRzZoU3laUVVhMDVGYmM4cWUzTWFHZjNIZndNVTU5VFlBUHNKUT09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0" overflow-y= "hidden"
-            overflow-x= "hidden" scrolling = "no"></iframe></div>
           <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549437/embed/?plusEmbedHash=YmIzNGE0NmFlZDlkZjUwZmJhMTU2NWY5YjdjZDlkNWFiYWUwZWJjMTE5YmI3YjA4M2E2OGU0ZGZkOWRhNzc0Y2JkOWE0MzA0Zjg4ODg5ZTQzYzRkNjk2NDhlZWFkOThjY2EzYWFjNjA3YjBhM2U4MGZhOGJiODA4MmRiMzY5NGJIY0xVZjdYWHNDZlhHTm0zOEFjeUpNWEpSeDNOSmlmT2lJQ1VwdTNTMWpPbnFWN0RuL1ovU1N5Y3VteGk3RFhMUmt0VWRkWE1CWnpiMGl3UkgwYkpzdz09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0" overflow-y= "hidden"
             overflow-x= "hidden" scrolling = "no"></iframe></div>
-  
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549444/embed/?plusEmbedHash=ODQ3YzZjOTIwOWQ4MTA5ZjA1OGJkZWIwMWNjMDQ2OWQxYjMyYTViOTRkYmI4ZWUxOTFkZDU2MzdiNmIxNmIwMmZmZWQwY2M5NzZhZGFlMDE5ZTdiOWM5NjhhNTk5NWM4NjI4ZDI4NDI5ZWY0MzU4ZjExYzkxMjk0ZDY5NzI4YjFHSW9JUUdyVUJrcVlYSW9jYnRkd0hlT0FrL0ZrM1N2ZkhxZS9rb2JNdGZUVC9BN0sxRzZoU3laUVVhMDVGYmM4cWUzTWFHZjNIZndNVTU5VFlBUHNKUT09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0" overflow-y= "hidden"
+            overflow-x= "hidden" scrolling = "no"></iframe></div>
         </div>
     </div>
     </section>
@@ -40,7 +39,20 @@
       <section>
         <h1>Try it : </h1>
         <p>Try edit the code to turn an animating shape into one that leaves traces behind.</p>
-
+        <p>Consider what line of code might be creating the visual difference.</p>
+        <p>Once you start typing code you can press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'undo'</strong> button to go back a step. Or press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'revert'</strong> button if you want to refresh to the orginal code.</p>
+        <script type="text/p5" data-height="600" data-preview-width="400" data-p5-version="1.4.1">
+function setup() {
+createCanvas(400, 400);
+}
+            
+function draw() {
+background('#FFFFFC');
+noStroke()
+fill('#FF4000')
+square(mouseX, mouseY, 40);
+}
+          </script>
     </div>
     </section>
 
