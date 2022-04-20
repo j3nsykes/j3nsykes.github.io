@@ -44,14 +44,6 @@ body {
   margin: 0;
 }
 
-#titleError h1 {
-  font-size: 72px;
-  display: inline-block;
-  color: #000;
-  background-color: #FF4000;
-  padding: 0.1em;
-  margin: 0;
-}
 
 #title h3 {
   font-size: 20px;

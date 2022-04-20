@@ -1,3 +1,4 @@
+
 /* @import must be at top of file, otherwise CSS will not work */
 @import url("//hello.myfonts.net/count/342cdb");
 
@@ -9,11 +10,11 @@
 
 html,
 body {
-  margin: 20;
+  margin: 50;
   font-family: 'Monospace821BT-Roman', sans-serif;
   font-weight: 300;
   line-height: 1.6;
-  color: #000;
+  color: #201E1F;
   background-color: #ffffff;
 }
 
@@ -24,11 +25,14 @@ body {
 #title section {
   width: 100%;
   margin: 0;
-  max-width: 1080px;
+  max-width: 800px;
 }
 
 #title {
-  padding: 20px;
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom:0px;
   background-color: #ffffff;
   /* For browsers that do not support gradients */
   /*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
@@ -37,72 +41,154 @@ body {
 #title h1 {
   font-size: 72px;
   display: inline-block;
-  color: #000;
-  background-color: #faff00;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
   padding: 0.1em;
   margin: 0;
 }
+iframe{
+  border:1px solid black;
+  }
 
 #title h3 {
   font-size: 20px;
   font-weight: 300;
-  color: #000;
-  background-color: #faff00;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
   padding: 0.1em;
   margin: 0;
   display: inline-block;
 }
 
+#sub{
+  font-size: 11px;
+
+}
+
+#subh h2{
+  font-size: 1.0em;
+  color: hsla(15, 100%, 50%, 0.9);
+  padding: 0.1em;
+  margin: 0;
+
+}
 #wrapper {
-  padding: 20px;
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom:80px;
 }
 
 strong {
   font-weight: 400;
 }
-.mainGrid{
+.grid-containerPortrait {
   display: grid;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  grid-template-columns: 1650px 400px  ;
+  grid-template-columns: 800px;
   align-content: space-evenly;
-
 }
 
-.grid-textContainer {
+.griditemPortrait {
+  grid-gap: 5px 5px;
+}
+.grid-containerMix {
   display: grid;
-  grid-column-gap: 0px;
+  grid-column-gap: 5px;
   grid-row-gap: 5px;
-  grid-template-columns: 400px ;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 270px 600px;
   align-content: space-evenly;
 }
+.grid-containerSingle {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 600px;
+  align-content: space-evenly;
+}
+.grid-containerLandscape {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 800px;
+  align-content: space-evenly;
+}
+
+.griditemLandscape {
+  grid-gap: 5px 5px;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px 400px 400px;
+    align-content: space-evenly;
+  }
+
+  .grid-containerThree {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 300px 300px 300px;
+    align-content: space-evenly;
+  }
+  
+  .griditem {
+    grid-gap: 10px 10px;
+  }
+  }
 
 .grid-container {
   display: grid;
   grid-column-gap: 5px;
   grid-row-gap: 5px;
-  grid-template-columns: 400px 400px 400px 400px  ;
+  grid-template-columns: 400px 400px 400px;
   align-content: space-evenly;
 }
 
-.griditem {
-  grid-gap: 10px 10px;
-}
-
-@media screen and (min-width: 1400px) {
-.grid-container {
+.grid-containerWide {
   display: grid;
-  grid-column-gap: 5px;
+  grid-column-gap: 60px;
   grid-row-gap: 5px;
-  grid-template-columns: 400px 400px 400px 400px  ;
+  grid-template-columns: 400px 400px ;
   align-content: space-evenly;
 }
 
 .griditem {
-  grid-gap: 10px 10px;
-}
+  grid-gap: 5px 5px;
 }
 
+@media only screen and (max-width: 600px) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: 400px;
+    align-content: space-evenly;
+  }
+  
+  .griditem {
+    grid-gap: 5px 5px;
+  }
+
+}
+.griditem a{
+  display:none;
+  border:none;
+  background-color:none;
+  padding: 0;
+  }
+  
+  .griditem a:hover{
+    display:none;
+    border:none;
+    background-color:none;
+    padding: 0;
+    }
 #frames {
   overflow-y: hidden;
   overflow-x: hidden;
@@ -114,21 +200,21 @@ strong {
   line-height: 1.6em;
   display: inline-block;
   margin: 0 0 1em 0;
-  color: #000;
-  background-color: #faff00;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
   padding: 0.1em;
 }
 
 #wrapper section {
-  width: 80%;
-  max-width: 2300px;
-  margin: 0 0 30px 0;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 80px 0;
 }
 
 #wrapper section h2 {
-  font-size: 20px;
-  color: #000;
-  background-color: #faff00;
+  font-size: 1.0em;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
   padding: 0.1em;
   margin: 0;
 }
@@ -139,7 +225,7 @@ strong {
 
 #wrapper section ul {
   list-style-type: square;
-  color: #000;
+  color: #201E1F;
 }
 
 #wrapper section ul li {
@@ -147,19 +233,29 @@ strong {
 }
 
 #wrapper section ul li:before {
-  content: "-";
+  
   position: absolute;
   margin: 0 0 0 -20px;
 }
 
 #wrapper section a {
-  color: #000;
+  color: #201E1F;
   border-bottom: 1px solid #000;
   text-decoration: none;
 }
-
-#wrapper section a:hover {
-  color: #000;
-  background-color: #faff00;
+#highlight a{
+  color: #201E1F;
+  background-color: hsla(15, 100%, 50%, 0.9);
+  border-bottom:none;
   padding: 0.1em;
+  text-decoration: none;
+}
+#wrapper section a:hover {
+  color: #201E1F;
+  background-color: hsla(15, 100%, 50%, 0.9);
+  padding: 0.1em;
+}
+
+.nav.nav.preview-nav{
+  display:none;
 }
