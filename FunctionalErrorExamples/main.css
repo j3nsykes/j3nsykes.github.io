@@ -44,6 +44,7 @@ body {
   color: hsla(15, 100%, 50%, 0.9);
   /* background-color: hsla(15, 100%, 50%, 0.9); */
   padding: 0.1em;
+  padding-left: 0px;
   margin: 0;
 }
 iframe{
