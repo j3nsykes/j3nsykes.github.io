@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Functional Error Examples @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Iteration</h1>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>When repeatedly drawing shapes at intervals across the canvas we often increment an x or y drawing position.</p>
+      <p>The two graphical outcomes are quite visually different yet there is only one small Functional Error between them.</p>
+      <p>The code for the left-hand graphic will generate without a compiler error. However, it will result in a solid shape when a repeated drawing of the same shape is desired.</p>
+    </section>
+    ---------------------------------------------------------------------------->
+   
+    <div id="frames">
+      <section>
+        <h1>Iterating across the canvas : </h1>
+        <p>Consider why the different graphical outcomes may be occuring. Why is there a solid line on the left but individual sqaures on the right?</p>
+        <div class="grid-containerWide">
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549448/embed/?plusEmbedHash=ZjFmY2YzMzgzODhjZDBiNjMwNmU2NGMwYmQwOTQ4NWY0NDRhZmVmNjUxM2FmNDg0MmViMTU3MTk0MTcxN2YyZmFkYzgzYzE4MWU5ZjljMmMwODUxOTYxN2Y3NWYxN2VlY2U5NDI3NGYzZTdjM2U2Yzc1NDdjYTEwOTc4Mzc4YTdqa05rRUNTaTdYdHVmSXJ3M245QXkwT2pGbS9oSWZmUVdIdXl4UUVZbHdBZ3NnR1ZtWHJjYkVFZk90U1BMM2liMHNvOW0vQmhPbXh5bjl4WEp0WGFxZz09&plusEmbedFullscreen=true" width="400" height="400"frameborder="0"></iframe></div>
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549449/embed/?plusEmbedHash=ZjNmZDM2YWEwMDk1MmM3NDYwOWIzZWIzMWMyZGMzNmVhYzMwMzY0ZmNlNDU2MDNmMjA1MGNjYzc4YmFlMzhmYTIxN2FkZmFiMDYyNWU3YzFiNGIyYzE4ZTgwZGY1MGMwYmVlMTc4NjRjMTJkZWU0MzRhMDk5MDU1YWE1ZDk2MTFDSWdOYy9SQWJoRHlKZEd3dnFoalBHYURHWnJtNHdjaUJhMUtiOWY0d0w2aFUwaWJrNHd6eTRaMnhLdUREb1NXU21hVlNCU3JaZFJXaWxHMjlvVTlsdz09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0"></iframe></div>
+        </div>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <section>
+        <h1>Try it : </h1>
+        <p>Try edit the code to turn a solid line into individual squares across the canvas.</p>
+        <p>Consider what lines of code might need adding to create the visual difference.</p>
+        <p>Once you start typing code you can press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'undo'</strong> button to go back a step. Or press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'revert'</strong> button if you want to refresh to the orginal code.</p>
+        <script type="text/p5" data-height="600" data-preview-width="400" data-p5-version="1.4.1">
+function setup() {
+createCanvas(400, 400);
+background('#FFFFFC');
+}
+
+function draw() {
+noFill()
+strokeWeight(0.05)
+stroke('#FF4000')
+              
+for(var i=10; i<width-50;i++){
+rect(i, height/2, 40);
+}
+}
+</script>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Functional Error Examples @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Questions</h1>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>If our code is interactive or generative there may be times where questions are programmed in the form of <strong style=" color: hsla(15, 100%, 50%, 0.9)">if statements</strong>.</p>
+      <p>It's easy to forget to ask questions from the perspective of a computer rather than a human. For example, a computer cannot interpret any other scenerio than the specific question programmed.</p>
+      <p>This example will run without a compiler error. However, it will result in a Functional Error that has different interactive outcomes.</p>
+    </section>
+    ---------------------------------------------------------------------------->
+   
+    <div id="frames">
+      <section>
+        <h1>Open ended questions : </h1>
+        <p>Move your mouse diagonally downward to the right across the canvas to see the different outcomes.</p>
+        <p>Consider why the left-hand graphic only changes colour once whereas the right-hand graphic continues to flip between orange and black colours.</p>
+        <div class="grid-containerWide">
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549544/embed/?plusEmbedHash=OWNhOTRkMzZkZjE1OWQ5ZWU5ODIxNzhkYmY3MTAyYWZjNWYyOWZlZTYyMjFmODZiYWJhZjIwZWM5N2FlNzNlOGY3MjczZTI5MGY0MGU2MGFhZjdlYzU5ODRiOTc2ZjY4YWY5YTc5ZDBlYzFjZDAxOThmMjI1MDZlZDRkNzhhNTFTYmRyTFd4WjVlR2dOQUVYMHJ6UVlWNTBVajRTdEJHd21iaWtucW1UNjU0NkozUExVdnhpWlJSc3FOckpkWmxueTBIdUZqTy9LRXlPSDkzdmxORnQrdz09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0"></iframe></div>
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549518/embed/?plusEmbedHash=MDZmZTk4YTI3YzQxZDk2MzEwYjYzYjA2ZGYyNmRmMWZjYTc2ZDNhY2U0MTEyMGJmYTg4MmM4MmU4MGViZjM1MDgzMDE4OGRlODVmZjI4ZTI5MWJlOWQ1MmE1YWI3ZWE5ZDAzZWY4YmIyM2Q4NzE2ZGI3YWY2OTJhM2M2YWE0NGZwUWFwRVFRQlhINFFhNXg5K2poTURFVWZjczZoWVlUL2ZBZmJOOFNhMTFDZ2VoMHpCMXo5Y21KZTR6bmJ3czI2RXoxOVFWKzdGUEwwM2xhT1grUjVBQT09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0"></iframe></div>
+        </div>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <section>
+        <h1>Try it : </h1>
+        <p>Try edit the code to turn the one-time interaction into a continuous interation. </p>
+        <p>Consider what line of code might be creating the behavioural difference. What extra information may the computer require in order to fully understand the question being asked of it?</p>
+        <p>Once you start typing code you can press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'undo'</strong> button to go back a step. Or press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'revert'</strong> button if you want to refresh to the orginal code.</p>
+        <script type="text/p5" data-height="600" data-preview-width="400" data-p5-version="1.4.1">
+let c = '#000000'
+
+function setup() {
+createCanvas(400, 400);
+background('#FFFFFC');
+}
+          
+function draw() {
+background('#FFFFFC');
+noStroke()
+            
+if((mouseX>width/2)&&(mouseY>height/2)){
+c ='#FF4000'
+}
+          
+//black triangle
+fill(c)
+triangle(100,100, 100,300, 300,100);
+            
+//orange triangle
+fill('#000000')
+triangle(300,100, 100,300, 300,300);
+          
+}
+          </script>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>
