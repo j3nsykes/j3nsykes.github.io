@@ -165,7 +165,7 @@ strong {
 
 }
   }
-@media screen and (min-width: 410px) {
+@media screen and (min-width: 410px) and (max-width: 780px){
   .grid-container {
     display: grid;
     grid-column-gap: 5px;
