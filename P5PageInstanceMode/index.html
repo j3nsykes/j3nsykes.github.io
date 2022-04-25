@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Selected Work @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+ 
+  <!-- main CSS styling -->
+  <link rel="stylesheet" href="main.css">
+  
+  <!-- add p5js libraries -->
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+<!-- add your JSONdata file sketch -->
+
+</head>
+
+<body>
+  <div id="title">
+
+    <h1>P5 on a webpage</h1>
+    <br>
+    <h3>example of p5 integrated into a page with instance mode</h3>
+
+  </div>
+
+  <div id = "p5sketchSimple">
+    <!-- p5 instance will be created here -->
+    <script>
+      let sketch = function (p) {
+  
+        p.setup = function () {
+          p.createCanvas(p.displayWidth, 200);
+          p.background(255);
+  
+        };
+        p.draw = function () {
+          let x = p.mouseX;
+          let y = p.mouseY;
+          p.noFill();
+          p.stroke("#ED225C");
+          p.strokeWeight(0.5);
+          p.ellipse(x, y, 30, 30);
+          p.ellipse(150, 150, 30, 30);
+        };
+      };
+      new p5(sketch, 'container');
+    </script>
+    </div>
+
+    <div id = "p5sketchData">
+      <!-- p5 instance will be created here -->
+      <script>
+        let sketch02 = function (p) {
+    
+          let start = 0;
+          let stop = 0;
+          let w = 100;
+          let h = 100;
+          let data01 =0;
+          let data02 = 0;
+          let r,g,b,rVal;
+
+          p.preload = function(){
+            data = p.loadJSON("data.json", p.gotData); 
+          }
+
+          p.gotData = function(){
+            r = data.flowers[0].r;
+            g = data.flowers[0].g;
+            b = data.flowers[0].b;
+  
+            console.log(data.flowers[0].r); //console log r val
+  
+              //if we want all the r vals?
+              for (var i = 0; i < data.flowers.length; i++) {
+                rVals = data.flowers[i].r;
+                console.log(rVals);
+              }
+          }
+
+          p.setup = function () {
+            p.createCanvas(400, 400);
+            p.background(255);
+    
+          };
+          p.draw = function () {
+            p.background(225);
+  
+  //position shapes
+  p.translate(p.width / 2, p.height / 2);
+  p.rotate(-180);
+  
+  p.push();//contain actions
+  
+  p.rotate(p.HALF_PI);
+  p.strokeCap(p.ROUND); //styling
+  p.strokeWeight(25);
+  p.noFill();
+  
+  // data 1
+  w = 300;
+  h = 300;
+ //use fixed value to test
+  //data01 = 50
+  
+  //or use JSON data
+  data01 = data.flowers[0].r;
+  stop = p.map(data01, 0, 360, 0, p.TWO_PI);
+  p.stroke('#d63447');  
+  p.arc(0, 0, w, h, 0, stop);
+  
+  //data 2
+  w = 150;
+  h = 150;
+   //use fixed value to test
+  //data02 = 70
+  
+    //or use JSON data
+  data02 = data.flowers[1].r;
+  stop = p.map(data02, 0, 360, 0, p.TWO_PI);
+  p.stroke('#f57b51');
+  p.arc(0, 0, w, h, start, stop);
+  
+  p.pop(); //enclose actions 
+          };
+        };
+        new p5(sketch02, 'container');
+      </script>
+      </div>
+</body>
+
+</html>
