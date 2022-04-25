@@ -293,12 +293,16 @@ strong {
   padding: 0.1em;
   text-decoration: none;
 }
-/* #wrapper section a:hover {
+#wrapper section a:hover {
   color: #201E1F;
   background-color: hsl(15, 100%, 50%,0.9);
   padding: 0.1em;
-} */
-
+}
+#wrapper section #gifs a:hover {
+  color: none;
+  background-color: none;
+  padding: 0px;
+}
 .nav.nav.preview-nav{
   display:none;
 }
