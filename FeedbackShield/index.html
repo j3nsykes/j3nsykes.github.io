@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Functional Errors @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Feedback Shield</h1>
+<br>
+    <h3>Arduino shield providing feedback for input and output pins.</h3>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Summary: </h1>
+
+    <p>Currently the focus of troubleshooting errors in programming languages is via highlighting syntax errors (linting) in the software or IDE. However, as Artists and Designers there are wide conceptual reasons for using code resulting in the pushing of creative and programmable boundaries. As <strong style=" color: hsla(15, 100%, 50%, 0.9)"><i>Functional Errors</i></strong> also include conceptual misunderstandings of what outputs will result from certain programming methods, it is important to explore how this can be fedback to users.  </p>
+    <p>When considering physical computing, students may find a visual or kinetic output that differs from what they expect from their code. As their code is technically correct it will not feedback any compiler or runtime errors. Therefore, this shield explores an alternate pedagogical method of providing legible, immediate feedback regarding what the microcontroller is actually executing. </p>
+    <p>An example would be an LED that is intended to blink ON and OFF. The code compiles without error but the user has not considered the timing of the commands being executed. Therefore, the LED is executing the task but at a speed our eyes cannot interpret. This may *look like* a flickering or static light.  Without the conceptual understanding of timing it may be difficult for a user to debug this error. </p>
+    <p>The aim of this Arduino Uno shield is to listen to input and output activity on the Uno pins and provide visual colour coded feedback based on the behaviour executed. </p> 
+    <br>
+    <p>The shield consists of a second <strong style=" color: hsla(15, 100%, 50%, 0.9)">'listener'</strong> microcontroller and a ring of LEDs.</p> 
+  </section>
+  
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-item"> <a href="/images/FeedbackShieldBreakdown.jpg" class="lazy-load replace">
+          <img src="/images/FeedbackShieldBreakdown.jpg" class="preview" alt="FeedbackShieldBreakdown" frameborder="0" />
+        </a></div>
+        <div class="grid-item"> <a href="/images/sidebyside.jpg" class="lazy-load replace">
+            <img src="/images/sidebyside.jpg" class="preview" alt="FeedbackShield" frameborder="0" />
+          </a></div>
+        </div>
+        </div>
+       
+
+      <section>
+    </section>
+      ---------------------------------------------------------------------------->
+      <section>
+        <h1>Pin Guide : </h1>
+    
+        <p>The inputs and outputs from your Arduino can be interpreted as follows:</p>
+        <div id ="pins">
+        <p>
+          <ul>
+            <li>Digital pin is HIGH a light will be green</li>
+            <li>Digital pin is LOW a light will be red</li>
+            <li>PWM pin is pulsing a light will be blue at the intensity and timing of that value</li>
+          </ul>
+        </p> 
+      </div>
+        <p>As such the example given above would be illustrated as a very fast flickering green LED, or static red LED signifying the message is being executed far faster than our eyes can interpret. </p> 
+        <p>Should a user be accidentally sending a message out of a different pin to which a component is plugged into then this should also be evident via the number LED that is on or off in the ring.  </p>
+        <p>See the pin guide card for indicators as to which LED corresponds to which pin. A few oporational things to note are:</p>
+        <div id ="pins">
+          <p>
+            <ul>
+              <li>The shield requires its own battery power source and does not run off the main Arduino Uno.</li>
+              <li>Pin 3 is inactive as this drives the ring of LEDs.</li>
+              <li>Pins 0 and 1 on the Uno are not visually represented on the Feedback Shield due to their common use in Serial communication. </li>
+            </ul>
+          </p> 
+        </div>  
+</section>
+      <div id="frames">
+        <div class="grid-containerMix">
+      <div class="grid-item"> <a href="/images/pinInfo02.jpg" class="lazy-load replace">
+          <img src="/images/pinInfo02.jpg" class="preview" alt="shield breakdown colour pins" frameborder="0" />
+        </a></div>
+    <div class="grid-item"> <a href="/images/Square-pinGuide02.jpg" class="lazy-load replace">
+      <img src="/images/Square-pinGuide02.jpg" class="preview" alt="pin guide" frameborder="0" />
+    </a></div>
+    </div>
+  </div>
+  <section></section>
+  ---------------------------------------------------------------------------->
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
+    </section>
+  </div>
+
+
+</body>
+
+</html>
