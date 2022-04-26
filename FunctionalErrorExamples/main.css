@@ -287,14 +287,14 @@ strong {
   text-decoration: none;
 }
 #highlight a{
-  color: #201E1F;
+  color: #ffffff;
   background-color: hsla(15, 100%, 50%, 0.9);
   border-bottom:none;
   padding: 0.1em;
   text-decoration: none;
 }
 #wrapper section a:hover {
-  color: #201E1F;
+  color: #ffffff;
   background-color: hsl(15, 100%, 50%,0.9);
   padding: 0.1em;
 }
