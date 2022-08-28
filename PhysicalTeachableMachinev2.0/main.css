@@ -59,7 +59,7 @@ code {
   font-size: 72px;
   display: inline-block;
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   padding: 0.1em;
   margin: 0;
 }
@@ -69,7 +69,7 @@ code {
   font-size: 20px;
   font-weight: 300;
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   padding: 0.1em;
   margin: 0;
   display: inline-block;
@@ -211,7 +211,7 @@ strong {
   display: inline-block;
   margin: 0 0 1em 0;
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   padding: 0.1em;
 }
 
@@ -224,7 +224,7 @@ strong {
 #wrapper section h2 {
   font-size: 1.0em;
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   padding: 0.1em;
   margin: 0;
 }
@@ -255,14 +255,14 @@ strong {
 }
 #highlight a{
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   border-bottom:none;
   padding: 0.1em;
   text-decoration: none;
 }
 #wrapper section a:hover {
   color: #000;
-  background-color: #faff00;
+  background-color: #41EAD4;
   padding: 0.1em;
 }
 

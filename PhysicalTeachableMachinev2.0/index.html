@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>PhysicalTeachableMachines @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Physical Teachable Machine v2.0</h1>
+    <br>
+    <h3>Machine Learning tools for physical computing</h3>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Summary: </h1>
+      <p><a
+        href="http://www.wekinator.org/" target="_blank">Wekinator</a> inspired a series of accessible Machine Learning tools for the web such as <a
+        href="https://teachablemachine.withgoogle.com/v1/" target="_blank">Teachable Machine</a> and <a
+        href="https://teachablemachine.withgoogle.com/" target="_blank">Teachable Machine 2.</a> These teaching tools expand these hands-on supervised learning concepts into Physical Computing materials. </p>
+        <p>Version 2.0 builds upon the<a
+        href="https://j3nsykes.github.io/PhysicalTeachableMachine" target="_blank"> 2019 examples</a>, streamlining the examples and 
+        adding further resources that compliment existing tools for Tensorflow Lite models. These templates provide students with a quick prototyping enviornment such as the P5JS Web Editor to generate graphical, audio , image outputs.</p>
+      <br>
+      <p>The code is open source and uses the <a
+        href="https://ml5js.org/" target="_blank"> ML5 Library</a> and Neural Net Function </p>
+        <p>The repo for the examples lives <a
+          href="https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0" target="_blank"> here</a></p>
+
+
+    </section>
+    ---------------------------------------------------------------------------->
+ 
+    <section>
+      <h1>Tiny Motion Trainer to P5JS : </h1>
+      <p><a
+        href="https://experiments.withgoogle.com/tiny-motion-trainer/view/settings" target="_blank"> Google’s Tiny Motion Trainer</a> is a very powerful interface for training gestural data. However, it only captures the data (much like Teachable Machine) and 
+        if you want to do more with it you need to transfer the model data to other tools. </p>
+        <p>This example enables you to stream the trained data from Google's Tiny Motion Trainer Arduino example to P5JS</p>
+        <p>[insert link and GIF]</p>
+        <u><p>Steps:</p></u>
+      <ol>
+        <li>Follow the setup, labelling and training steps via Tiny Motion Trainer interface</li>
+        <li>Once training is complete, select Download Model and check the Arduino example box</li>
+        <li>In order to work with the Tiny Motion Trainer P5 example you need to make two changes to the Arduino template. This is so the data can be parsed correctly and set to P5JS</li>
+    
+      <ol type = "a">
+        <li>Replace the model.h file with your own</li>
+        <li>Replace lines 45 - 53 with the custom data from your downloaded .ino sketch</li>
+        <pre>
+          <code>
+// Values from Tiny Motion Trainer
+#define MOTION_THRESHOLD 0.122
+#define CAPTURE_DELAY 1022 // This is now in milliseconds
+#define NUM_SAMPLES 67
+
+// Array to map gesture index to a name
+const char *GESTURES[] = {
+  "tap", "circle"
+}; 
+          </code>
+        </pre>
+      </ol>
+    </ol>
+    </section>
+    ---------------------------------------------------------------------------->
+    <section>
+      <h1>Physical Teachable Machine v2.0 in P5 : </h1>
+      <p>This is an updated P5JS sketch that utilises the ML5JS Neural Net function. 
+        It allows you to send any number of inputs to P5JS and train them. This example no longer requires a template per different sensor; allowing changes to the settings variables to adapt to differring inputs.</p>
+        <p>[insert link and GIF]</p>
+        <u><p>Steps:</p></u>
+        <ol>
+        <li>Select your type of input on line 15. There are some preset settings such as <code>TRILLCRAFT</code>, <code>ANALOG</code>, <code>CUSTOM</code></li>
+        <li>These settings dictate what the maximum data readings will be. You can also change the minimum reading of 0 if required here on line 20. <code>let dataRange = [0, TRILLCRAFT];</code></li>
+        <li>Select the number of inputs you are sending into the sketch on line 23: <code>const NUM_INPUTS = 24;</code></li>
+        <li>Change the labels to what you want them to be on line 24 <code>const LABLES = ["Square", "Circle", "Triangle"];</code></li>
+        <li>Make sure you have the correct Arduino sketch on your microcontroller for the type of sensor in use. If you are using a Trill Craft select that corresponding Arduino sketch. For all other inputs use the sensor array example sketch. <a
+          href="https://github.com/j3nsykes/Physical-Teachable-Machine-v2.0/tree/main/ArduinoSketches" target="_blank"> Example templates</a></li>
+        <li>That’s it ! Press run and connect your board.</li>
+
+      </ol>
+      <p>Once you have trained your model you may want to save it then pre-load it to work with when developing the outputs. The <a
+        href="https://editor.p5js.org/jen_GSA/sketches/8Em08TM5F" target="_blank">Physical Teachable Machine v2.0 pre-loaded model template </a>helps you do this.</p>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <div class="grid-containerLandscape">
+        <div class="grid-itemLandscape"> <a href="/images/teachableMachine.png" class="lazy-load replace">
+          <img src="/images/teachableMachine.png" class="preview" alt="PhysicalTeachableMachines" frameborder="0" />
+        </a></div>
+        <div style="padding:56.25% 0 0 0;position:relative;"><iframe
+            src="https://player.vimeo.com/video/445665006?autoplay=1&loop=1&title=0byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+        <div style="padding:56.15% 0 0 0;position:relative;"><iframe
+            src="https://player.vimeo.com/video/446211949?autoplay=1&loop=1&title=0&byline=0&portrait=0"
+            style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0"
+            allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div>
+        <script src="https://player.vimeo.com/api/player.js"></script>
+      </div>
+    </div>
+
+    ---------------------------------------------------------------------------->
+
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/">Home</a></p>
+    </section>
+  </div>
+
+
+</body>
+
+</html>
