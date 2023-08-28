@@ -1,0 +1,495 @@
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/342cdb");
+
+@font-face {
+  font-family: 'Monospace821BT-Roman';
+  src: url('webfonts/342CDB_0_0.eot');
+  src: url('webfonts/342CDB_0_0.eot?#iefix') format('embedded-opentype'), url('webfonts/342CDB_0_0.woff2') format('woff2'), url('webfonts/342CDB_0_0.woff') format('woff'), url('webfonts/342CDB_0_0.ttf') format('truetype');
+}
+
+html,
+body {
+  margin: 50;
+  font-family: 'Monospace821BT-Roman', sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #201E1F;
+  background-color: #ffffff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#title section {
+  width: 100%;
+  margin: 0;
+  max-width: 800px;
+}
+
+#title {
+  padding-top: 80px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 0px;
+  background-color: #ffffff;
+  /* For browsers that do not support gradients */
+  /*background-image: linear-gradient(to right, rgba(79,35,208,0), rgba(79,35,208,1));*/
+}
+
+#title h1 {
+  font-size: 72px;
+  display: inline-block;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
+  padding: 0.1em;
+  padding-left: 0px;
+  margin: 0;
+}
+
+iframe {
+  border: 1px solid black;
+}
+
+#title h3 {
+  font-size: 20px;
+  font-weight: 300;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
+  padding: 0.1em;
+  margin: 0;
+  display: inline-block;
+}
+
+#sub {
+  font-size: 11px;
+
+}
+
+#subh h2 {
+  font-size: 1.0em;
+  color: hsla(15, 100%, 50%, 0.9);
+  padding: 0.1em;
+  margin: 0;
+
+}
+
+#wrapper {
+  padding-top: 50px;
+  padding-left: 80px;
+  padding-right: 80px;
+  padding-bottom: 80px;
+}
+
+strong {
+  font-weight: 400;
+}
+
+.grid-containerPortrait {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 800px;
+  align-content: space-evenly;
+}
+
+.griditemPortrait {
+  grid-gap: 5px 5px;
+}
+
+.grid-containerMix {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 400px 400px;
+  grid-template-rows: 270px 600px;
+  align-content: space-evenly;
+}
+
+.grid-containerSingle {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 600px;
+  align-content: space-evenly;
+}
+
+.grid-containerLandscape {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 800px;
+  align-content: space-evenly;
+}
+
+.griditemLandscape {
+  grid-gap: 5px 5px;
+}
+
+
+.radio-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  /* Space between radio buttons */
+}
+
+/* Reset the default appearance of the radio button */
+input[type="radio"] {
+  appearance: none;
+  width: 30px;
+  height: 30px;
+  border: 2px solid grey;
+  border-radius: 20%;
+  outline: none;
+  /* remove default focus outline */
+  box-shadow: none;
+  /* remove default focus shadow */
+  margin: 0;
+}
+
+/* Style for checked state */
+input[type="radio"]:checked {
+  background-color: hsla(15, 100%, 50%, 0.9);
+  box-shadow: inset 0 0 0 5px white;
+  /* make a white dot inside when checked */
+}
+
+/* Add a custom focus ring*/
+input[type="radio"]:hover {
+  background-color: hsla(15, 100%, 50%, 0.9);
+  box-shadow: inset 0 0 0 5px white;
+}
+
+
+.radio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+textarea {
+  width: 600px;
+  display: flex;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  margin: 10px 0;
+  transition: border-color 0.3s;
+  resize: vertical;
+  /* Allows users to resize the textarea vertically only */
+}
+
+textarea:focus {
+  border-color: hsla(15, 100%, 50%, 0.9);
+  outline: none;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  /* Optional: Adds some space below the label */
+}
+
+button[type="submit"] {
+  padding: 10px 15px;
+  border: 1px solid hsla(15, 100%, 50%, 0.9);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px white;
+  background-color: white;
+  color: hsla(15, 100%, 50%, 0.9);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* Adds some space above the button */
+  transition: background-color 0.3s;
+}
+
+#addNameButton {
+  padding: 3px 15px;
+  border: 1px solid hsla(15, 100%, 50%, 0.9);
+  border-radius: 4px;
+  box-shadow: inset 0 0 0 1px white;
+  background-color: white;
+  color: hsla(15, 100%, 50%, 0.9);
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  /* Adds some space above the button */
+  transition: background-color 0.3s;
+}
+
+#addNameButton:hover {
+  background-color: hsla(15, 100%, 50%, 0.9);
+  color: white;
+}
+
+button[type="submit"]:hover {
+  background-color: hsla(15, 100%, 50%, 0.9);
+  color: white;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+#nameDropdown,
+#shieldDropdown {
+  padding: 10px;
+  border: 1px solid hsla(15, 100%, 50%, 0.9);
+  color: hsla(15, 100%, 50%, 0.9);
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#shieldDropdown {
+  margin-bottom: 10px;
+}
+
+#nameDropdown:focus,
+#shieldDropdown:focus {
+  border: 1px solid hsla(15, 100%, 50%, 0.9);
+}
+
+#newNameInput {
+  margin-top: 0px;
+  padding: 5px 15px;
+
+}
+
+input[type="text"] {
+  border: 1px solid #ccc;
+}
+
+input[type="text"]:focus {
+  border-color: hsla(15, 100%, 50%, 0.9);
+  outline: none;
+}
+
+
+
+select:focus {
+  border-color: hsla(15, 100%, 50%, 0.9);
+  outline: none;
+}
+
+#submit {
+  margin-top: 10px;
+
+}
+
+#addName p {
+  margin-top: 1em !important;
+  margin-bottom: 0px !important;
+}
+
+.gifs a {
+  border-bottom: none !important;
+}
+
+@media screen and (min-width: 1200px) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px 400px 400px;
+    align-content: space-evenly;
+  }
+
+  .grid-containerThree {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 300px 300px 300px;
+    align-content: space-evenly;
+  }
+
+  .griditem {
+    grid-gap: 10px 10px;
+
+  }
+
+  .grid-containerWide {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px 400px;
+    align-content: space-evenly;
+  }
+
+}
+
+/* @media screen and (min-width: 1080px) {
+.grid-container {
+  display: grid;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+  grid-template-columns: 400px 400px 400px;
+  align-content: space-evenly;
+}
+
+.grid-containerWide {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-row-gap: 5px;
+  grid-template-columns: 400px 400px ;
+  align-content: space-evenly;
+}
+
+.griditem {
+  grid-gap: 5px 5px;
+
+}
+  } */
+@media screen and (min-width: 390px) and (max-width: 1199px) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 5px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px 400px;
+    align-content: space-evenly;
+  }
+
+  .grid-containerWide {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px 400px;
+    align-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .grid-container {
+    display: grid;
+    grid-column-gap: 2px;
+    grid-row-gap: 2px;
+    grid-template-columns: 400px;
+    align-content: space-evenly;
+  }
+
+  .grid-containerWide {
+    display: grid;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
+    grid-template-columns: 400px;
+    align-content: space-evenly;
+  }
+
+  .griditem {
+    grid-gap: 5px 5px;
+  }
+
+}
+
+.griditem a {
+  display: none;
+  border: none;
+  background-color: none;
+  padding: 0;
+}
+
+.griditem a:hover {
+  display: none;
+  border: none;
+  background-color: none;
+  padding: 0;
+}
+
+#frames {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  /* Hide vertical scrollbar */
+}
+
+#wrapper h1 {
+  font-size: 1.2em;
+  line-height: 1.6em;
+  display: inline-block;
+  margin: 0 0 1em 0;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
+  padding: 0.1em;
+}
+
+#wrapper section {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 0 80px 0;
+}
+
+#wrapper section h2 {
+  font-size: 1.0em;
+  color: hsla(15, 100%, 50%, 0.9);
+  /* background-color: hsla(15, 100%, 50%, 0.9); */
+  padding: 0.1em;
+  margin: 0;
+}
+
+#wrapper section p {
+  margin: 0 0 1em 0;
+}
+
+#wrapper section ul {
+  list-style-type: square;
+  color: #201E1F;
+}
+
+#wrapper section ul li {
+  margin: 0 0 0.5em 0;
+}
+
+#wrapper section ul li:before {
+
+  position: absolute;
+  margin: 0 0 0 -20px;
+}
+
+#wrapper section #pins li {
+  color: hsla(15, 100%, 50%, 0.9);
+  list-style-type: disc;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+#wrapper section #pins ul {
+  color: hsla(15, 100%, 50%, 0.9);
+  list-style-type: none;
+  margin-top: 10px;
+  margin-left: 1px;
+}
+
+#wrapper section a {
+  color: #201E1F;
+  border-bottom: 1px solid #000;
+  text-decoration: none;
+}
+
+#highlight a {
+  color: #ffffff;
+  background-color: hsla(15, 100%, 50%, 0.9);
+  border-bottom: none;
+  padding: 0.1em;
+  text-decoration: none;
+}
+
+#wrapper section a:hover {
+  color: #ffffff;
+  background-color: hsl(15, 100%, 50%, 0.9);
+  padding: 0.1em;
+}
+
+#wrapper section .gifs a:hover {
+  color: none;
+  background-color: none;
+  padding: 0px;
+}
+
+.nav.nav.preview-nav {
+  display: none;
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Functional Error Examples @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Drawing</h1>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>As artists or designers generating graphics in code we may have varying conceptual intentions for the visual output.</p>
+      <p>At times you may want an animating visual that updates or you may want to see the traces left behind much like when drawing on paper. The quite distinctively different outcome is the difference in one line of code.</p>
+      <p>Whilst neither code will generate a compiler error, it will result in a Functional Error of a conceptual kind should you wish for one visual outcome over the other.</p>
+    </section>
+    ---------------------------------------------------------------------------->
+   
+    <div id="frames">
+      <section>
+        <h1>Animation vs Drawing : </h1>
+        <p>Move your mouse around each canvas to see the different outcomes.</p>
+        <div class="grid-containerWide">
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549437/embed/?plusEmbedHash=YmIzNGE0NmFlZDlkZjUwZmJhMTU2NWY5YjdjZDlkNWFiYWUwZWJjMTE5YmI3YjA4M2E2OGU0ZGZkOWRhNzc0Y2JkOWE0MzA0Zjg4ODg5ZTQzYzRkNjk2NDhlZWFkOThjY2EzYWFjNjA3YjBhM2U4MGZhOGJiODA4MmRiMzY5NGJIY0xVZjdYWHNDZlhHTm0zOEFjeUpNWEpSeDNOSmlmT2lJQ1VwdTNTMWpPbnFWN0RuL1ovU1N5Y3VteGk3RFhMUmt0VWRkWE1CWnpiMGl3UkgwYkpzdz09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0" overflow-y= "hidden"
+            overflow-x= "hidden" scrolling = "no"></iframe></div>
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1966490/embed/?plusEmbedHash=NmQwOWYyNmFkNDhiN2ZkNDQ5OGU0ZTE0MDJmNjFiZDY4NTQyOWQ3YjNkNzBhYTc0M2Q5OWY1OTY5ZjgwZmNlOTI5NzE1ZGFiMTY4MDZhZDIxYmMyNTJiYTQ4ZDk1YWFkY2U1NTEzY2FkYTUxODRjMGEzYzQ0MWVjM2E4OWU0YTlic2ExbXc1STh4TzNkb0FMSWhwUTN3MHJ3SWxIT2g3VlB6c0l6bEd5Z2hQaDlOZ3RMcG9LQ1JXcE51YldJZXFpWVYxMXhwRFdDWThvZHM1bGJyekJ6dz09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0" overflow-y= "hidden"
+            overflow-x= "hidden" scrolling = "no"></iframe></div>
+        </div>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <section>
+        <h1>Try it : </h1>
+        <p>Try edit the code to turn an animating shape into one that leaves traces behind.</p>
+        <p>Consider what line of code might be creating the visual difference.</p>
+        <p>Once you start typing code you can press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'undo'</strong> button to go back a step. Or press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'revert'</strong> button if you want to refresh to the orginal code.</p>
+        <script type="text/p5" data-height="600" data-preview-width="400" data-p5-version="1.4.1">
+function setup() {
+createCanvas(400, 400);
+}
+            
+function draw() {
+background('#FFFFFC');
+noStroke()
+fill('#FF4000')
+square(mouseX, mouseY, 40);
+}
+          </script>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/FunctionalErrorExamples">Back to examples</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+  <link rel="stylesheet" href="/css/lazy-load-images.min.css">
+  <script src="/js/lazy-load-images.min.js"></script>
+  <script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+<head>
+  <meta charset="utf-8">
+  <title>Functional Error Examples @JenSykes</title>
+  <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div id="title">
+    <h1>Order</h1>
+  </div>
+  <div id="wrapper">
+    <section>
+      <h1>Intro : </h1>
+      <p>As you start to draw more grpahical shapes the visual outputs might be different from what you intended or even wrote in your code.</p>
+      <p>Depending on what order the computer executes your code can make a big difference visually.</p>
+      <p>This example will run without a compiler error. However, it will result in a Functional Error that draws different graphical outcomes.</p>
+    </section>
+    ---------------------------------------------------------------------------->
+   
+    <div id="frames">
+      <section>
+        <h1>Order of Lines : </h1>
+        <p>Consider why the left-hand example has a large solid orange square in the back-drop when the right-hand example only has one small square in the foreground.</p>
+        <div class="grid-containerWide">
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549452/embed/?plusEmbedHash=MWNiZjVmZGVjZWRlNTMwZjIxMDE3ZmY1YWZhNzBkNzNhZjEzMGE1MTM0OGE1ZWYwN2M0ZTY0MTEyZGNlNzllMjU3NjdiYTI5YWNkNDljOTQzYTVjYmQwYmQzODM4YWY5YTYxODA4YjQ0ODE4YmNkMmJjNmZmODA2NmU1MTUyYmFYZ2FtMWd3elpoaGQydnVaNGd1NFlKNXhNZnhLaU9iTGI5dmdFWVlDRG14QVFGTXFvSFlYTmhWeHAvenNXaldaSkZPRnRjR1hwY09Yc2d4L2RJQU81Zz09&plusEmbedFullscreen=true" width="400" height="400"frameborder="0"></iframe></div>
+          <div class="grid-item"><iframe src="https://openprocessing.org/sketch/1549483/embed/?plusEmbedHash=ZjVkNTY4NzUxMTg5N2M0NDcyNmJhNDQ3M2NjMGJhNGJiZjA3MWJkZmI2NGNhZmJjZjVlYWJmODBjNWM0Yjg3Y2NhZmE0Y2MyNTQwYzcyZGEzZTllMWZkNTUxNWQ5ZWFmOGU2NDgyY2VkMTk4YjlmYjVmZGFiN2VjMDkwMWRjNzVoVlg4eFdQWkE3c3ZsNzNpb2FBcGw3cnRiNnZSR0JjVlpNcm5GTU1tQUJ6cC9lajFBOWcxTE05TDJhSkg5d05UMW5NY0JFajRpUGZQMHNjQ2xlVCtDUT09&plusEmbedFullscreen=true" width="400" height="400" frameborder="0"></iframe></div>
+        </div>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <div id="frames">
+      <section>
+        <h1>Try it : </h1>
+        <p>Try edit the code to generate the graphic in the right-hand visual.</p>
+        <p>Consider what lines of code might be effecting the visual difference.</p>
+        <p>Once you start typing code you can press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'undo'</strong> button to go back a step. Or press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'revert'</strong> button if you want to refresh to the orginal code.</p>
+        <script type="text/p5" data-height="600" data-preview-width="400" data-p5-version="1.4.1">
+function setup() {
+createCanvas(400, 400);
+background('#FFFFFC');
+rectMode(CENTER)
+}
+
+function draw() {
+strokeWeight(5)
+stroke('#FF4000')
+rect(width / 2, height / 2, 200, 200)
+
+noFill()
+strokeWeight(5)
+stroke('#000000')
+rect(width / 2, height / 2, 100, 100)
+
+fill('#FF4000')
+rect(width / 2, height / 2, 50, 50)
+
+}
+          </script>
+    </div>
+    </section>
+
+    ---------------------------------------------------------------------------->
+    <section>
+
+      <h2>J3n Sykes</h2>
+      <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+<a href="https://github.com/j3nsykes">GitHub</a> | <a href="https://j3nsykes.github.io/FunctionalErrorExamples">Back to examples</a></p>
+    </section>
+
+  </div>
+
+</body>
+
+</html>

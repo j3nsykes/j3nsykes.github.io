@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/lazy-load-images.min.css">
+<script src="/js/lazy-load-images.min.js"></script>
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Functional Error Examples @JenSykes</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body onload="inputData(), addNames()" id="3">
+
+    <!-- <body> -->
+
+    <div id="title">
+        <h1>Fade _01</h1>
+    </div>
+    <div id="wrapper">
+        <section>
+            <h1>Intro : </h1>
+            <p>Generating outputs with varied control such as brightness, speed or position requires an analogWrite
+                value and a PWM signal</p>
+            <p>An efficient way of programming incrementing changes to this value is by using a for loop</p>
+            <p>In this example there is a Functional Error in the code which successfully compiles but results in an
+                unexpected behaviour from the LED. Try decifer where the issue arises.</p>
+        </section>
+
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Fading LED : </h1>
+                <h2>Pins</h2>
+                <div id="pins">
+                    <ul>LED = D9</ul>
+                </div>
+                <div class="grid-containerWide">
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990423/embed/?plusEmbedHash=ZWZjMDU0MWMzZWVkMGQ1MjRhYzZkNzY3YWUxYjUyNDEyNTk1MThjNjAzYzJkMjg1M2IyMzY1ZWE1YTVlNTk5MWYyZWQ2NGNjODY4YTk5MjI4MmRkNWFkZDA3MTExMjZhMDU3ODM2ZGFmYmFhZGQzYjAyY2UwZThmMDYxMTRjNGQzR1JxRUVWeUlRNFA0L0lDZFNTcW9JYWpCa0pReXgrU1lkbmhUSWdraXNSTFJnOTBIY1F4THZiK0RSazRlSjVvQ3NETTJhWEFiQjdsblcybWcrTmlSdz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990362/embed/?plusEmbedHash=MGUzMGFhMmQxZGM0NWY0ODA3ZjNjZmU3M2ZjN2YxOTA1MGQwMTI1NzAwNjlmMjdhNmI2NjA0N2ZlNmU0MmExZmY3M2Q1YTM3ZDVhMWViNDc2NWUyNzBlZmViMDc4ZGVlNzVmZWZmYjU4ZTE0NjU0N2NmNmIwOTczNTNmYWQzNDVGYkZBMFJBRUFnQmovNFdRekJHMVlkQUszY1BOTHBoNTBpSklicWVOMWcrcU5lQ0NjUWFlNGRramtNUHU2WUlQdWhsVHpHbERRcE16Yjc0QUZmUmwzZz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                </div>
+                <div class="grid-containerWide">
+                    <div class="grid-item"><iframe width="820" height="400"
+                            src="https://www.tinkercad.com/embed/6rB0t6akBeb" frameborder="0" marginwidth="0"
+                            marginheight="0" scrolling="no"></iframe>
+
+                    </div>
+                </div>
+        </div>
+        </section>
+
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Reflect : </h1>
+                <p>Press the <strong style=" color: hsla(15, 100%, 50%, 0.9)">'Start Simulation'</strong> button and
+                    observe
+                    the
+                    output in this example. What is the LED doing?</p>
+                <p>In this example ...</p>
+                <div id="pins">
+                    <li>Why is the simulation showing a static on LED?</li>
+                    <li>Why is the LED not fading?</li>
+                    <li>How would you adapt the code blocks to get a 'fading' output?</li>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <div id="frames">
+            <section>
+                <h1>Edit it : </h1>
+                <p>Tinker this example</p>
+                <p>Edit the code blocks to turn the static LED into a fading one</p>
+
+                <p>Select this link to open the dashboard in a seperate tab. Then press the <strong
+                        style=" color: hsla(15, 100%, 50%, 0.9)">code</strong> button to edit the blockly or text-based
+                    code.
+                    Press
+                    <strong style=" color: hsla(15, 100%, 50%, 0.9)">start simulation</strong> to see the changes in
+                    action.
+                </p>
+                <div class="grid-containerWide">
+                    <div class="grid-item" style="width:820px">
+                        <a href="/images/fadeblocks.png" class="lazy-load replace">
+                            <img src="/images/fadeblocks.png" class="preview" alt="code block location" frameborder="0">
+                        </a>
+                    </div>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+            <div class="feedback">
+                <h1>Feedback : </h1>
+                <p>Please provide feedback on how you understood the concepts in this task.</p>
+                <p>Select your name from the dropdown menu so your feedback can be collated over the duration of this
+                    teaching
+                    module. ***</p>
+                <form id="myForm">
+                    <label for="nameDropdown">Select a name:</label>
+                    <select id="nameDropdown">
+                    </select>
+                    <br>
+
+                    <div id="addName">
+                        <p>Don't see your name in the list? Add it below then select it from the drop down menu</p>
+                        <input type="text" id="newNameInput" placeholder="Enter a new name">
+                        <button id="addNameButton">Add Name</button>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>Select the buttons below to rate your score on a scale of 1 to 5</p>
+                    <p>1 = not at all | 5 = a lot</p>
+
+                    <div class="radio-buttons">
+                        <div class="radio-item">
+                            <input type="radio" id="radio1" name="choice" value="1">
+                            <label for="radio1">1</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio2" name="choice" value="2">
+                            <label for="radio2">2</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio3" name="choice" value="3">
+                            <label for="radio3">3</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio4" name="choice" value="4">
+                            <label for="radio4">4</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio5" name="choice" value="5">
+                            <label for="radio5">5</label>
+                        </div>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>Describe what you've learnt in your own words.</p>
+                    <p>It's important to note this is not a test. You do not need to use technical terminology and there
+                        is no
+                        right
+                        or wrong answer.</p>
+                    <label for="textAreaInput"></label>
+                    <textarea id="textAreaInput" name="textAreaInput" rows="4" placeholder="Type here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <p><i>*** All data collected will then be anonomised before being used in future research.</i></p>
+            </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+
+            <h2>J3n Sykes</h2>
+            <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+            <a href="https://github.com/j3nsykes">GitHub</a> | <a
+                href="https://j3nsykes.github.io/FunctionalErrorExamples">Back
+                to examples</a></p>
+        </section>
+
+    </div>
+    <script src="/js/data.js"></script>
+</body>
+
+</html>

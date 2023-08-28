@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/lazy-load-images.min.css">
+<script src="/js/lazy-load-images.min.js"></script>
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functional Error Examples @JenSykes</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="inputData(), addNames()" id="4">
+    <div id="title">
+        <h1>Fade _02</h1>
+    </div>
+    <div id="wrapper">
+        <section>
+            <h1>Intro : </h1>
+            <p>Now you have an understanding of delay and timing when using for loops, let's transfer it to text-based
+                code and the physical
+                real via the Arduino IDE</p>
+            <p>We will explore how we observe and reflect upon the relationship between code (software) and components
+                (hardware). In week 1 we uploaded a sketch from software to hardware ( the Arduino Leonardo board).
+                Once you have uploaded code onto the board it remains on the device until you upload new code.
+            </p>
+        </section>
+
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Fading LED : </h1>
+                <p>We will repeat the Fading _01 task with the physical components and Arduino IDE. Wire your LED to the
+                    following pins</p>
+                <!-- <h2>Pins</h2> -->
+                <div id="pins">
+                    <ul>LED = D9</ul>
+                    <ul>Long leg = positive</ul>
+                    <ul>Short leg = negative</ul>
+                </div>
+                <div class="grid-containerWide">
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990423/embed/?plusEmbedHash=ZWZjMDU0MWMzZWVkMGQ1MjRhYzZkNzY3YWUxYjUyNDEyNTk1MThjNjAzYzJkMjg1M2IyMzY1ZWE1YTVlNTk5MWYyZWQ2NGNjODY4YTk5MjI4MmRkNWFkZDA3MTExMjZhMDU3ODM2ZGFmYmFhZGQzYjAyY2UwZThmMDYxMTRjNGQzR1JxRUVWeUlRNFA0L0lDZFNTcW9JYWpCa0pReXgrU1lkbmhUSWdraXNSTFJnOTBIY1F4THZiK0RSazRlSjVvQ3NETTJhWEFiQjdsblcybWcrTmlSdz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990362/embed/?plusEmbedHash=MGUzMGFhMmQxZGM0NWY0ODA3ZjNjZmU3M2ZjN2YxOTA1MGQwMTI1NzAwNjlmMjdhNmI2NjA0N2ZlNmU0MmExZmY3M2Q1YTM3ZDVhMWViNDc2NWUyNzBlZmViMDc4ZGVlNzVmZWZmYjU4ZTE0NjU0N2NmNmIwOTczNTNmYWQzNDVGYkZBMFJBRUFnQmovNFdRekJHMVlkQUszY1BOTHBoNTBpSklicWVOMWcrcU5lQ0NjUWFlNGRramtNUHU2WUlQdWhsVHpHbERRcE16Yjc0QUZmUmwzZz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <div id="frames">
+            <section>
+                <h1>Feedback Shield: </h1>
+                <p>
+                    Often when working with both software and hardware it can be difficult to identify where mistakes
+                    might occur.
+                    You now have 3 areas to troubleshoot; the code, the circuit, the relationship between the two.
+                </p>
+                <p>The Feedback Shield aims to provide visual feedback of these areas to help you troubleshoot your
+                    work. It sits on top of your Leonardo board, allowing you to connect wires and components directly
+                    through
+                    it.</p>
+                <p>The shield provideds colour coded feedback via square surface mounted LEDs that map to corresponding
+                    pins. for example the
+                    first LED maps to pin 2 and the last pin 13.</p>
+                <div id="pins">
+                    <ul>If the signal is PWM the LED will be blue</ul>
+                    <ul>The value is represented by the brightness of the LED.</ul>
+                </div>
+                <br>
+                <p>In the context of this task the LED mapped to pin 9 should be blue in colour and fade in brightness.
+                </p>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="gifs">
+                            <a href="/images/pwm.gif" class="lazy-load replace">
+                                <img src="/images/pwm.gif" class="preview" alt="digital feedback shield"
+                                    frameborder="0" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Reflect : </h1>
+                <p>Observe the output in the physical space. What is the physical LED doing?</p>
+                <p>When using the shield ...</p>
+                <div id="pins">
+                    <ul>What colour is the corresponding LED for pin 9?</ul>
+                    <ul>How is it behaving, is it changing colour?</ul>
+                    <ul>How would you adapt the code to make the shield LED change start to fade?</ul>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <div id="frames">
+            <section>
+                <h1>Edit it : </h1>
+                <p>Try edit the code to turn the static LED into a fading LED. Consider what line
+                    of code might need to be added to create the visual difference. What did you do in the last task?
+                </p>
+                <p>Copy the Function Error code below into your Arduino IDE and begin editing it. Once you think you
+                    have solved
+                    the Functional Error <strong style=" color: hsla(15, 100%, 50%, 0.9)">upload</strong> to your board
+                    to see the
+                    visual difference. Remember to check the <strong
+                        style=" color: hsla(15, 100%, 50%, 0.9)">board</strong> and
+                    <strong style=" color: hsla(15, 100%, 50%, 0.9)">port</strong> match your Arduino board and USB port
+                    in use.
+                </p>
+                <iframe
+                    src=https://create.arduino.cc/editor/j3nsykes/b655b212-9f46-4e53-95d7-4a5be87254f1/preview?embed&snippet
+                    style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+            <div class="feedback">
+                <h1>Feedback : </h1>
+                <p>Please provide feedback on how you understood the use of the Feedback Shield in this task.</p>
+                <p>Select your name from the dropdown menu so your feedback can be collated over the duration of this
+                    teaching
+                    module. ***</p>
+                <form id="myForm">
+                    <label for="nameDropdown">Select a name:</label>
+                    <select id="nameDropdown">
+                    </select>
+                    <br>
+
+                    <div id="addName">
+                        <p>Don't see your name in the list? Add it below then select it from the drop down menu</p>
+                        <input type="text" id="newNameInput" placeholder="Enter a new name">
+                        <button id="addNameButton">Add Name</button>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <label for="shieldDropdown">Did you use a Feedback Shield?</label>
+                    <select id="shieldDropdown">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <p>Select the buttons below to rate your score on a scale of 1 to 5</p>
+                    <p>1 = not at all | 5 = a lot</p>
+
+                    <div class="radio-buttons">
+                        <div class="radio-item">
+                            <input type="radio" id="radio1" name="choice" value="1">
+                            <label for="radio1">1</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio2" name="choice" value="2">
+                            <label for="radio2">2</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio3" name="choice" value="3">
+                            <label for="radio3">3</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio4" name="choice" value="4">
+                            <label for="radio4">4</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio5" name="choice" value="5">
+                            <label for="radio5">5</label>
+                        </div>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>Describe what you've learnt about the Feedback Shield in your own words.</p>
+                    <p>It's important to note this is not a test. You do not need to use technical terminology and there
+                        is no
+                        right
+                        or wrong answer.</p>
+                    <label for="textAreaInput"></label>
+                    <textarea id="textAreaInput" name="textAreaInput" rows="4" placeholder="Type here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <p><i>*** All data collected will then be anonomised before being used in future research.</i></p>
+            </div>
+        </section>
+
+        ---------------------------------------------------------------------------->
+        <section>
+
+            <h2>J3n Sykes</h2>
+            <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+            <a href="https://github.com/j3nsykes">GitHub</a> | <a
+                href="https://j3nsykes.github.io/FunctionalErrorExamples">Back to examples</a></p>
+        </section>
+
+    </div>
+    <script src="/js/data.js"></script>
+</body>
+
+</html>

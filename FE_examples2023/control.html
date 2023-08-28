@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/lazy-load-images.min.css">
+<script src="/js/lazy-load-images.min.js"></script>
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+<head>
+    <meta charset="utf-8">
+    <title>Functional Error Examples @JenSykes</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body onload="inputData(), addNames()" id="5">
+    <div id="title">
+        <h1>Control _01</h1>
+    </div>
+    <div id="wrapper">
+        <section>
+            <h1>Intro : </h1>
+            <p>Now you have an understanding of analogInput and the Serial monitor, let's transfer it to text-based
+                code and the physical realm via the Arduino IDE</p>
+            <p>We will explore how we observe and reflect upon the relationship between code (software) and components
+                (hardware). </p>
+            <p>Observe the behaviour of the dial that controls the LED brightness.
+            </p>
+        </section>
+
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Controlling an LED : </h1>
+                <p>We will take the control task into physical components and Arduino IDE. Wire your components to the
+                    following pins</p>
+                <!-- <h2>Pins</h2> -->
+                <div id="pins">
+                    <ul>LED = D9</ul>
+                    <ul>Long leg = positive</ul>
+                    <ul>Short leg = negative</ul>
+                    <ul>Potentiometer = A0</ul>
+                </div>
+                <div class="grid-containerWide">
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990443/embed/?plusEmbedHash=MTVkNmI2ZTJjMzJhNGQyZmQ3NzA0YjNkZWY0NDdkMzk0YzcxZTliMTI3ZjQ3YzhiNGJmZGQzN2Y4MjU3ZmM0MzBkYWVhMWY4MjgyNTU1Mjg0ODY3YTIzMTYxNzY5ODhkMGVjYWI3ZWQyNTJmMzU5MTdmYWZjZmU5MzBiMWI0MWFBeFcrZ3ZjMlpIL0xQaXh6RUlKeXR2TEcxemlsUTdsQXFISlhvZ1BERVlub3ZVWnpQb2ZESjlwNmFOSWcwMHhOUi84TjF1N0pOSm9jUjdWQlQzZXZzdz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                    <div class="grid-item"><iframe
+                            src="https://openprocessing.org/sketch/1990442/embed/?plusEmbedHash=YmQ3MzA1ZGY0YzE4MWYwZTVkMWVjZDgxYzMxMDI3OWQ4OTczZWMzOWZjYzk2Y2RjMmQ5MzZiOWVjNzJhNmEyNTAxNmVkMDMzNDg0NGNkNTUzYTg2ODUwNzRjODI0OTgxNzMzZDkyOTBmODI2NDYzNWY5M2VkZmZlZTg3M2JhYjZ6bGFZbytJTFg5TmpqUUxJeXpWbzZ3ZzlNSDVmOHQ4R3IzQ3pCN0h6OFpQMGJyWkNaaWJmSW45N2x3K0N1Zk5BdXpNRlkreGJ5blRPYmN5UUZXaHVNZz09&plusEmbedFullscreen=true"
+                            width="400" height="400" frameborder="0"></iframe></div>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <div id="frames">
+            <section>
+                <h1>Feedback Shield: </h1>
+                <p>If you have a feedback shield place it on top of your Arduino board and view what visual feedback you
+                    get when you make changes to your code.</p>
+                <p>Remember the Feedback Shield provides colour coded feedback via its corresponding LEDs</p>
+                <div id="pins">
+                    <ul>The PWM analogWrite value out of pin 9 is represented in blue</ul>
+                    <ul>The analogInput value on pin A0 is represented in yellow</ul>
+                    <ul>The values are represented by the brightness of the LED.</ul>
+                    <ul>Observe the relationship between the brightness levels of each LED</ul>
+                </div>
+                <br>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <div class="gifs">
+                            <a href="/images/control.gif" class="lazy-load replace">
+                                <img src="/images/control.gif" class="preview" alt="digital feedback shield"
+                                    frameborder="0" /></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        ---------------------------------------------------------------------------->
+
+        <div id="frames">
+            <section>
+                <h1>Reflect : </h1>
+                <p>Observe the output in the physical space. What is the physical LED doing?</p>
+                <p>When using the shield ...</p>
+                <div id="pins">
+                    <ul>What colour is the corresponding LED for pin 9?</ul>
+                    <ul>How is the output LED behaving, is it getting brighter in relation to turning the dial?</ul>
+                    <ul>Is the brightness of the A0 Shield LED changing?</ul>
+                    <ul>Do both shield LEDs behave in relation to each other?</ul>
+                </div>
+                <br>
+                <p>In addition ...</p>
+                <div id="pins">
+                    <ul>What values are printed to the Serial Monitor</ul>
+                    <ul>How is the output LED behaving, is it getting brighter in relation to turning the dial?</ul>
+                    <ul>How would you adapt the code to make the relationship between input to output correlate</ul>
+                </div>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <div id="frames">
+            <section>
+                <h1>Edit it : </h1>
+                <p>Try edit the code to make the relationship between the potentiometer and the brightness of the LED
+                    correlate. Consider what line
+                    of code might need to be added to create the visual difference.
+                </p>
+                <p>Copy the Function Error code below into your Arduino IDE and begin editing it. Once you think you
+                    have solved
+                    the Functional Error <strong style=" color: hsla(15, 100%, 50%, 0.9)">upload</strong> to your board
+                    to see the
+                    visual difference. Remember to check the <strong
+                        style=" color: hsla(15, 100%, 50%, 0.9)">board</strong> and
+                    <strong style=" color: hsla(15, 100%, 50%, 0.9)">port</strong> match your Arduino board and USB port
+                    in use.
+                </p>
+                <iframe
+                    src=https://create.arduino.cc/editor/j3nsykes/67ce3109-bcfa-4b80-a2c3-4ca341c8c6b9/preview?embed&snippet
+                    style="height:510px;width:100%;margin:10px 0" frameborder=0></iframe>
+        </div>
+        </section>
+        ---------------------------------------------------------------------------->
+        <section>
+            <div class="feedback">
+                <h1>Feedback : </h1>
+                <p>Please provide feedback on how you understood the use of the Feedback Shield in this task.</p>
+                <p>Select your name from the dropdown menu so your feedback can be collated over the duration of this
+                    teaching
+                    module. ***</p>
+                <form id="myForm">
+                    <label for="nameDropdown">Select a name:</label>
+                    <select id="nameDropdown">
+                    </select>
+                    <br>
+
+                    <div id="addName">
+                        <p>Don't see your name in the list? Add it below then select it from the drop down menu</p>
+                        <input type="text" id="newNameInput" placeholder="Enter a new name">
+                        <button id="addNameButton">Add Name</button>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <label for="shieldDropdown">Did you use a Feedback Shield?</label>
+                    <select id="shieldDropdown">
+                        <option value="Yes">Yes</option>
+                        <option value="No">No</option>
+                    </select>
+                    <br>
+                    <p>Select the buttons below to rate your score on a scale of 1 to 5</p>
+                    <p>1 = not at all | 5 = a lot</p>
+
+                    <div class="radio-buttons">
+                        <div class="radio-item">
+                            <input type="radio" id="radio1" name="choice" value="1">
+                            <label for="radio1">1</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio2" name="choice" value="2">
+                            <label for="radio2">2</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio3" name="choice" value="3">
+                            <label for="radio3">3</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio4" name="choice" value="4">
+                            <label for="radio4">4</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio5" name="choice" value="5">
+                            <label for="radio5">5</label>
+                        </div>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>Describe what you've learnt about the Feedback Shield in your own words.</p>
+                    <p>It's important to note this is not a test. You do not need to use technical terminology and there
+                        is no
+                        right
+                        or wrong answer.</p>
+                    <label for="textAreaInput"></label>
+                    <textarea id="textAreaInput" name="textAreaInput" rows="4" placeholder="Type here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <p><i>*** All data collected will then be anonomised before being used in future research.</i></p>
+            </div>
+        </section>
+
+        ---------------------------------------------------------------------------->
+        <section>
+
+            <h2>J3n Sykes</h2>
+            <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+            <a href="https://github.com/j3nsykes">GitHub</a> | <a
+                href="https://j3nsykes.github.io/FunctionalErrorExamples">Back to examples</a></p>
+        </section>
+
+    </div>
+    <script src="/js/data.js"></script>
+    <!-- On Page 1 -->
+
+
+</body>
+
+</html>
