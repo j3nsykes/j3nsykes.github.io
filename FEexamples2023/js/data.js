@@ -30,8 +30,10 @@ function inputData() {
             console.log("Selected radio button:", selectedValue);
             console.log("Text input:", textInput);
             console.log('Selected name:', dropdown.value);
-            console.log('Feedback Shield Used:', shield.value)
             console.log('Page ID:', pageID);  // Outputs: "page1"
+            if (shield.value != null) {
+                console.log('Feedback Shield Used:', shield.value)
+            }
         } else {
             if (!selectedValue) {
                 console.log("Please select a score.");
