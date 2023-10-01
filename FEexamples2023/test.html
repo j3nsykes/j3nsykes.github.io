@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="/css/lazy-load-images.min.css">
+<script src="/js/lazy-load-images.min.js"></script>
+<script src="//toolness.github.io/p5.js-widget/p5-widget.js"></script>
+
+
+<head>
+    <meta charset="utf-8">
+    <title>Functional Error Examples @JenSykes</title>
+    <!--<link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:200,200i,300,300i,400,400i,500,500i,600,600i,700,700i&display=swap" rel="stylesheet"> -->
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+<body onload="sendData()" id="7">
+
+    <!-- <body> -->
+
+    <div id="title">
+        <h1>Test Form</h1>
+    </div>
+    <div id="wrapper">
+        <section>
+            <h1>Intro : </h1>
+            <p>One of the first sketches you encounter when working with Arduino is turning an LED on and off</p>
+            <p>In this example there is a Functional Error in the code which successfully compiles but results in an
+                unexpected behaviour from the LED. Try decifer where the issue arises.</p>
+        </section>
+
+
+        ---------------------------------------------------------------------------->
+        <section>
+            <div class="feedback">
+                <h1>Feedback : </h1>
+                <p>Please provide feedback on how you understood the concepts in this task.</p>
+                <p>Select your name from the dropdown menu so your feedback can be collated over the duration of this
+                    teaching
+                    module. ***</p>
+                <form id="myForm">
+                    <label for="nameDropdown">Select a name:</label>
+                    <select id="nameDropdown">
+                    </select>
+                    <br>
+
+                    <div id="addName">
+                        <p>Don't see your name in the list? Add it below then select it from the drop down menu</p>
+                        <input type="text" id="newNameInput" placeholder="Enter a new name">
+                        <button id="addNameButton">Add Name</button>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>Select the buttons below to rate how well you understood the concept of this task on a scale of 1
+                        to 5</p>
+                    <p>1 = not at all | 5 = a lot</p>
+
+                    <div class="radio-buttons">
+                        <div class="radio-item">
+                            <input type="radio" id="radio1" name="choice" value="1">
+                            <label for="radio1">1</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio2" name="choice" value="2">
+                            <label for="radio2">2</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio3" name="choice" value="3">
+                            <label for="radio3">3</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio4" name="choice" value="4">
+                            <label for="radio4">4</label>
+                        </div>
+                        <div class="radio-item">
+                            <input type="radio" id="radio5" name="choice" value="5">
+                            <label for="radio5">5</label>
+                        </div>
+                    </div>
+                    <br>
+                    ---------------------------------------------
+                    <p>How many times did you make changes and upload your code?</p>
+                    <input type="number" id="numBox"></input>
+                    <br>
+                    ---------------------------------------------
+                    <p>Describe what you've learnt in your own words.</p>
+                    <p>It's important to note this is not a test. You do not need to use technical terminology and there
+                        is no
+                        right
+                        or wrong answer.</p>
+                    <label for="textAreaInput"></label>
+                    <textarea id="textAreaInput" name="textAreaInput" rows="4" placeholder="Type here..."></textarea>
+                    <button type="submit">Submit</button>
+                </form>
+                <br>
+                <p><i>*** All data collected will then be anonomised before being used in future research.</i></p>
+            </div>
+
+        </section>
+        <section>
+            ---------------------------------------------------------------------------->
+            <br>
+            <button id="nextPage">Next Page</button>
+        </section>
+
+        <section>
+
+            <h2>J3n Sykes</h2>
+            <!--  <p><a href="https://twitter.com/J3nSykes">Twitter</a> | <a href="https://github.com/j3nsykes">GitHub</a></p>
+-->
+            <a href="https://github.com/j3nsykes">GitHub</a> | <a
+                href="https://j3nsykes.github.io/FunctionalErrorExamples">Back
+                to examples</a></p>
+        </section>
+
+    </div>
+    <script src="js/storeData.js"></script>
+    <script>
+
+        document.getElementById('nextPage').addEventListener('click', function () {
+            window.location.href = 'blink02.html';
+        });
+
+    </script>
+</body>
+
+</html>
