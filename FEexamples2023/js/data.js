@@ -34,6 +34,9 @@ function inputData() {
             if (shield.value != null) {
                 console.log('Feedback Shield Used:', shield.value)
             }
+            else {
+                const shield = false //set true/false to zero as default
+            }
         } else {
             if (!selectedValue) {
                 console.log("Please select a score.");
