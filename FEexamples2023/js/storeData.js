@@ -13,7 +13,7 @@ async function postInput(data) {
     await fetch('https://functionalerrors.com/api', {
         method: 'POST',
         headers: {
-            'Content-Type': 'text/plain'
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(data)
     })
