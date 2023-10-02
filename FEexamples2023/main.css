@@ -229,7 +229,8 @@ button[type="submit"] {
 }
 
 #addNameButton,
-#nextPage {
+#nextPage,
+#getCSV {
   padding: 3px 15px;
   border: 1px solid hsla(15, 100%, 50%, 0.9);
   border-radius: 4px;
@@ -243,7 +244,8 @@ button[type="submit"] {
   transition: background-color 0.3s;
 }
 
-#nextPage {
+#nextPage,
+#getCSV {
   padding: 10px 15px;
 }
 
