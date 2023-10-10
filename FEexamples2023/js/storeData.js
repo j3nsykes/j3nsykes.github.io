@@ -183,7 +183,7 @@ function addNames() {
 }
 
 // Sample JSON data
-const namesJson = '["Jen","Lula","Doe","Smith"]';
+const namesJson = '["Jen","Chigbu","Hollis","Lily", "Jessica", "Rysia", "Alex", "Jade", "Kesia", "Fraser", "Du", "Jonny", "Iman", "Shauna"]';
 // Parse the JSON data
 const namesArray = JSON.parse(namesJson);
 // Get the dropdown element by ID
