@@ -124,7 +124,7 @@ function inputData() {
         // Get the text from the textarea
         let textInput = document.getElementById('textAreaInput').value.trim(); // .trim() removes whitespace from start and end
         const dropdown = document.getElementById('nameDropdown').value;
-        const shield = document.getElementById('shieldDropdown');
+        // const shield = false;
         const pageID = document.body.id;
         const numChanges = document.getElementById('numBox')
         await hashName(dropdown)
@@ -143,17 +143,7 @@ function inputData() {
             inputPageID = parseInt(pageID)
             inputAnalysis = textInput
             inputChanges = parseInt(numChanges.value)
-
-
-            if (shield.value != null) {
-                console.log('Feedback Shield Used:', shield.value)
-                if (shield.value == 'No') {
-                    shieldBool = false
-                }
-                else {
-                    shieldBool = true
-                }
-            }
+            shieldBool = false
             console.log('shield val', shieldBool)
 
             //send to API
@@ -189,7 +179,7 @@ function addNames() {
 }
 
 // Sample JSON data
-const namesJson = '["Jen","Chigbu","Hollis","Lily", "Jessica", "Rysia", "Alex", "Jade", "Kesia", "Fraser", "Du", "Jonny", "Iman", "Shauna"]';
+const namesJson = '["Zachary","Gregorio","Reuben","Jiro", "Anan", "Aya", "Keya", "Anika", "Sayeda-Tahira", "Alaa", "Tharshan", "Ayman", "Greg", "Latoya", "Elian", "Yu", "Maisha", "Max", "Pawandeep", "Rahma", "Dan"]';
 // Parse the JSON data
 const namesArray = JSON.parse(namesJson);
 // Get the dropdown element by ID
