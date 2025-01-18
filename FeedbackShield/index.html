@@ -46,30 +46,19 @@
       <section>
         <h1>Pin Guide : </h1>
 
-        <p>The inputs and outputs from your Arduino can be interpreted as follows:</p>
+        <p>Some improvements and changes made to the design:</p>
         <div id ="pins">
         <p>
           <ul>
-            <li>Digital pin is HIGH a light will be green</li>
-            <li>Digital pin is LOW a light will be red</li>
-            <li>PWM pin is pulsing a light will be blue at the intensity and timing of that value</li>
+            <li>The LED mapping will be paralelle to the pins</li>
+            <li>Low pass filters integrated into the circuit for quick, low latency signal detection</li>
+            <li>Surface mount soldered components for smaller, slim line profile</li>
           </ul>
         </p>
       </div>
-        <p>As such the example given above would be illustrated as a very fast flickering green LED, or static red LED signifying the message is being executed far faster than our eyes can interpret. </p>
-        <p>Should a user be accidentally sending a message out of a different pin to which a component is plugged into then this should also be evident via the number LED that is on or off in the ring.  </p>
-        <p>See the pin guide card for indicators as to which LED corresponds to which pin. A few oporational things to note are:</p>
-        <div id ="pins">
-          <p>
-            <ul>
-              <li>The shield requires its own battery power source and does not run off the main Arduino board (Uno/Leonardo).</li>
-              <li>There is a black dot to indicate pin 2 and it goes up in LED number to the right (clockwise)</li>
-              <li>Pin 3 is inactive as this drives the ring of LEDs.</li>
-              <li>Pins 0 and 1 on the Uno are not visually represented on the Feedback Shield due to their common use in Serial communication. </li>
-            </ul>
-          </p>
         </div>
 </section>
+        <div id="wrapper">
       <div id="frames">
         <div class="grid-containerMix">
       <div class="grid-item"> <a href="/images/pinInfo02.jpg" class="lazy-load replace">
@@ -81,6 +70,37 @@
     </div>
   </div>
   <section></section>
+        ---------------------------------------------------------------------------->
+
+        <section>
+
+
+        <h1>Second iteration : </h1>
+                <p>The inputs and outputs from your Arduino can be interpreted as follows:</p>
+        <div id ="pins">
+        <p>
+          <ul>
+            <li>Digital pin is HIGH a light will be green</li>
+            <li>Digital pin is LOW a light will be red</li>
+            <li>PWM pin is pulsing a light will be blue at the intensity and timing of that value</li>
+          </ul>
+        </p>
+        </div>
+      <div id="frames">
+        <div class="grid-double">
+      <div class="grid-item"> <a href="/images/IMG_8739 3.jpg" class="lazy-load replace">
+          <img src="/images/IMG_8739 3.jpg" class="preview" alt="iteration two" frameborder="0" />
+        </a></div>
+    <div class="grid-item"> <a href="/images/IMG_8742 2.jpg" class="lazy-load replace">
+      <img src="/images/IMG_8742 2.jpg" class="preview" alt="iteration two" frameborder="0" />
+    </a></div>
+        <!-- <div class="grid-item"> <a href="/images/IMG_9315.jpg" class="lazy-load replace">
+      <img src="/images/IMG_9315.jpg" class="preview" alt="iteration two" frameborder="0" />
+    </a></div> -->
+    </div>
+  </div>
+
+        </section>
   ---------------------------------------------------------------------------->
     <section>
 
